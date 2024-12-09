@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFNX0MTJWW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FFNX0MTJWW');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zach Goldman | Portfolio</title>
@@ -18,6 +26,8 @@
             <div class="nav-links">
                 <a href="#Experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
             </div>
         </div>
     </nav>
@@ -31,7 +41,7 @@
             <p class="intro">Hey, welcome to my site! Hope you're having a great day!</p>
             <div class="cta-buttons">
                 <a href="#projects" class="cta-button">Explore My Projects</a>
-                <a href="#contact" class="cta-button">Getin Touch</a>
+                <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
         </div>
     </header>
@@ -41,7 +51,7 @@
     <section id="Experience" class="experience-section">
         <div class="section-header animate-fadeInUp">
             <h2>Experience</h2>
-            <p class="section-description">A brief overview of my internships, roles, and accomplishments.</p>
+            <p class="section-description">A brief overview of my career journey.</p>
         </div>
         <div class="personal-story">
 
@@ -224,19 +234,29 @@
                 <i class="fab fa-twitter"></i>
                 Twitter
             </a>
+            <a href="https://github.com/Zach213" class="contact-item">
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span id="email-link" style="cursor: pointer;" onclick="copyEmail()">Email (click to copy)</span>
+            </div>
+            <script>
+                function copyEmail() {
+                    navigator.clipboard.writeText('zacharygoldman@gmail.com').then(() => {
+                        alert('Email address copied to clipboard!');
+                    }).catch((err) => {
+                        console.error('Failed to copy: ', err);
+                    });
+                }
+            </script>
+            
+            
+
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/zachsgoldman/">LinkedIn</a>
-                <a href="https://github.com/Zach51232">Github</a>
-            </div>
-            <p class="copyright">© 2024 Zachary Goldman</p>
-        </div>
-    </footer>
 
     <!-- Add before closing body tag -->
     <script src="js/particles.js"></script>

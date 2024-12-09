@@ -161,6 +161,9 @@ body {
 
 .project-info {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .project-info h3 {
@@ -172,6 +175,14 @@ body {
 .project-info p {
     color: grey;
     font-size: 14px;
+}
+
+.impact-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #0984e3;
+    margin-top: 0.5rem;
+    font-weight: 500;
 }
 
 /* Footer */
@@ -362,7 +373,7 @@ body {
 /* Video Container */
 .video-container {
     width: 100%;
-    max-width: 960px;
+    max-width: 480px;
     margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
@@ -373,6 +384,8 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
+    width: 230px;
 }
 
 /* For mobile responsiveness */
@@ -1327,6 +1340,24 @@ footer {
     position: absolute;
     left: 0;
     color: var(--primary);
+}
+
+.project-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.project-about, .project-demo {
+    flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-flex-container {
+        flex-direction: column;
+    }
 }
 
 

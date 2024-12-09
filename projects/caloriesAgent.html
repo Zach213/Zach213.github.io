@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Calorie Agent | Zach Goldman</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Agent</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
- 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">ZG</a>
+            <div class="nav-links">
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#about">About</a>
+                <a href="https://github.com/Zach213">Github</a>
+                <a href="https://www.linkedin.com/in/zachsgoldman/">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Header -->
-  <div class="top-container">
-    <h1>Calorie Agent</h1>
-    <p>Estimating nutrition facts from your favorite restaurant menu before you go out to eat.</p>
-  </div>
+    <!-- Project Hero -->
+    <header class="project-hero">
+        <div class="project-hero-content">
+            <h1>Calorie Agent Demo</h1>
+            <p class="project-tagline">
+              Calorie Agent is a chrome extension that estimates the calories of your favorite menu items by checking Google Review photos.
+              Also check out <a href="agentComparison.html">MultiOn & Computer Use doing this task</a> 
+    
+            </p>
+        </div>
+    </header>
+<!-- Video Section -->
+<div class="video-container" style="position: relative; width: 100%; height: 0; padding-bottom: 40%;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+    src="https://www.youtube.com/embed/_MorwfYURks" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
 
-  <!-- About Section -->
-  <div class="project-details">
-    <h2>About Calorie Agent</h2>
-    <p>
-      Calorie Agent is a tool designed to help users estimate the nutritional content of meals from restaurant menus. It aims to provide users with detailed nutritional information to make informed dining choices.
-    </p>
-    <p>
-      For a detailed comparison of this agent against other AI solutions, check out my <a href="agentComparison.html">AI Agent Comparison</a> page.
-    </p>
-  </div>
-
-  <!-- Video Section -->
-  <div class="video-container">
-    <h2>Calorie Estimation Agent Demo</h2>
-    <video controls>
-      <source src="../videos/MyCalorieDemo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <!-- Content -->
-  <div class="project-details">
-    <h3>My Contributions:</h3>
-    <ul>
-      <li>Developed the algorithm to estimate nutritional values based on menu descriptions.</li>
-      <li>Integrated a user-friendly interface for easy navigation and use.</li>
-      <li>Conducted extensive testing to ensure accuracy and reliability of the estimates.</li>
-    </ul>
-    <h3>Key Features:</h3>
-    <ul>
-      <li>Accurate nutritional estimates for a wide range of menu items.</li>
-      <li>User-friendly interface for quick and easy access to information.</li>
-      <li>Customizable settings to cater to individual dietary needs.</li>
-    </ul>
-    <div class="image-row">
-      <img class="resize" src="../photos/caloriesAgent2.png" alt="Calorie Agent Screenshot 2">
-    </div>
-  </div>
-
-  <!-- Back Link -->
-  <div class="bottom-container">
-    <a class="btn" href="../index.html">Back to Portfolio</a>
-  </div>
 </body>
 
 </html> 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio CAPTCHA | Zach Goldman</title>
+    <title>Audio Captcha</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
             <div class="nav-links">
                 <a href="../index.html#projects">Projects</a>
                 <a href="../index.html#about">About</a>
-                <a href="https://github.com/Zach51232">Github</a>
+                <a href="https://github.com/Zach213">Github</a>
                 <a href="https://www.linkedin.com/in/zachsgoldman/">LinkedIn</a>
             </div>
         </div>
@@ -25,10 +25,30 @@
     <!-- Project Hero -->
     <header class="project-hero">
         <div class="project-hero-content">
-            <h1>Audio CAPTCHA</h1>
-            <p class="project-tagline">Making CAPTCHAs more accessible through audio.</p>
+            <h1>Audio Captcha</h1>
+            <p class="project-tagline">Can an agent solve an audio captcha that we generate?</p>
         </div>
     </header>
+    
+    <section class="project-section">
+        <div class="project-flex-container">
+            <div class="project-about">
+                <h2>About Audio Captcha</h2>
+                <p class="project-description">
+                    Interested in agents and accessibility, 
+                    I built an audio captcha generator of 100 character and math questions (which instead of asking for characters to type out asks how many of a single character are in the audio or a math question in audio form) -
+                     and tested if GPT4o could solve it if we let it use a trasnscription tool. Think how many r's are in strawberry but asked in audio form, or what is 1+52 in audio form.
+                </p>
+            </div>
+            <div class="project-demo">
+                <h2>Demo Photos</h2>
+                <div class="project-gallery">
+                    <img src="../photos/captchaPhotos1.png" alt="Pressing Enter" class="captcha-image">
+                    <img src="../photos/captchaPhotos2.png" alt="CAPTCHA Image 2" class="captcha-image">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Project Content -->
     <main class="project-content">
@@ -36,54 +56,19 @@
             <div class="project-details-grid">
                 <div class="project-detail-box">
                     <h4>Problem</h4>
-                    <p>Visual CAPTCHAs exclude visually impaired users.</p>
+                    <p>Folks with visual impairments struggle with captchas</p>
                 </div>
                 <div class="project-detail-box">
                     <h4>Solution</h4>
-                    <p>Audio-based CAPTCHA system for better accessibility.</p>
-                </div>
-                <div class="project-detail-box">
-                    <h4>Impact</h4>
-                    <p>Improved web accessibility for visually impaired users.</p>
+                    <p>An audio captcha generator that can be used to verify users, testing if GPT4o could solve it if we let it use a trasnscription tool</p>
                 </div>
                 <div class="project-detail-box">
                     <h4>Learning</h4>
-                    <p>Audio processing and accessibility standards in web development.</p>
+                    <p>Explored accessibility and agent use cases</p>
                 </div>
             </div>
         </div>
 
-        <section class="project-section">
-            <h2>About Audio CAPTCHA</h2>
-            <p class="project-description">
-                This project implements an audio-based CAPTCHA system to make web security measures more accessible to visually impaired users while maintaining security standards.
-            </p>
-            <div class="image-row">
-                <img src="../photos/captchaPhotos1.png" alt="Pressing Enter" class="captcha-image">
-                <img src="../photos/captchaPhotos2.png" alt="CAPTCHA Image 2" class="captcha-image">
-            </div>
-        </section>
-
-        <section class="project-section">
-            <h2>Key Features</h2>
-            <ul class="feature-list">
-                <li>Clear audio prompts for verification</li>
-                <li>Multiple difficulty levels</li>
-                <li>Screen reader compatibility</li>
-                <li>Robust security measures</li>
-            </ul>
-        </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/zachsgoldman/">LinkedIn</a>
-                <a href="https://github.com/Zach51232">Github</a>
-            </div>
-            <p class="copyright">© 2024 Zachary Goldman</p>
-        </div>
-    </footer>
 </body>
-</html> 
+</html>

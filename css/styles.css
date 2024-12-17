@@ -1360,5 +1360,96 @@ footer {
     }
 }
 
+/* Project Filters */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Hide filtered out projects */
+.project-card.hidden {
+    display: none;
+}
+
+/* Animation for filtering */
+.project-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.featured-project-banner {
+    background: linear-gradient(135deg, rgba(9, 132, 227, 0.1) 0%, rgba(0, 184, 148, 0.1) 100%);
+    border: 2px solid rgba(9, 132, 227, 0.2);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.featured-project-banner p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2d3436;
+}
+
+.featured-project-banner a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.featured-project-banner a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.new-badge {
+    background: linear-gradient(135deg, #0984e3, #00b894);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
 
  

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFNX0MTJWW"></script>
     <script>
@@ -32,19 +33,23 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
+        <div class="particle-canvas"></div>
         <div class="hero-content animate-fadeInUp">
-            <img src="photos/circle-cropped.png" class="profile-img" alt="pic of zach">
-            <h1>Zach Goldman</h1>
+            <img src="photos/circle-cropped.png" class="profile-img" alt="pic of Zach">
+            <h1>Zachary Goldman</h1>
             <p class="title"><strong>Product Manager</strong> at Microsoft AI</p>
-            <p class="intro">Hey, welcome to my site! Hope you're having a great day!</p>
+            <p class="intro">From politics to AI products, I drive user-centric, data-backed decisions.</p>
             <div class="cta-buttons">
                 <a href="#projects" class="cta-button">Explore My Projects</a>
                 <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
+            <div class="featured-project-banner">
+                <p>Or check out my latest project: <a href="projects/NutritionAgent.html">an AI Agent that tells you the nutrition facts of your favorite menu items online 🍽️</a></p>
+            </div>
         </div>
     </header>
+    
 
 
     <!-- Experience Section -->
@@ -54,13 +59,8 @@
             <p class="section-description">A brief overview of my career journey.</p>
         </div>
         <div class="personal-story">
-            <h3> Intro </h3>
-            <p>
-                My journey—from politics to product, from a 
-                congressional internship to AI innovation—has been 
-                about building skills to apply data to social impact.
-            </p>
-            <h3>My Story:</h3>
+
+            <h3>About Me:</h3>
 <ul>
     <li><strong>Exploring the building blocks of impact- from Politics to Product:</strong> I started exploring politics through an internship with a Congressman, 
         where I loved the broad scope of impact, but sought something more hands on.
@@ -122,8 +122,9 @@
     <section id="projects" class="projects-section">
         <div class="section-header animate-fadeInUp">
             <h2>Projects</h2>
-            <p class="section-description">Featured projects and more.</p>
+            <p class="section-description">Explore my work across AI, web, and more.</p>
         </div>
+        
         <div class="featured-projects">
             <!-- Featured Project 1 -->
             <a href="projects/NutritionAgent.html" class="project-card featured">
@@ -148,8 +149,18 @@
                 </div>
             </a>
         </div>
+
+        <!-- Add filter buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('ai')">AI Projects</button>
+            <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+            <button class="filter-btn" onclick="filterProjects('mobile')">Mobile Apps</button>
+        </div>
+
+        <!-- Update other-projects div with data-category attributes -->
         <div class="other-projects">
-            <a href="projects/CAPTCHAAudio.html" class="project-card">
+            <a href="projects/CAPTCHAAudio.html" class="project-card" data-category="ai">
                 <div class="project-image">
                     <img src="photos/captchaPhotos1.png" alt="Audio Captcha">
                 </div>
@@ -161,7 +172,7 @@
                 </div>
             </a>
             <!-- Other Projects -->
-            <a href="projects/pocketcoach.html" class="project-card">
+            <a href="projects/pocketcoach.html" class="project-card" data-category="mobile">
                 <div class="project-image">
                     <img src="photos/PocketCoach.png" alt="Pocket Coach">
                 </div>
@@ -171,7 +182,7 @@
                     <span class="impact-tag">🚀 Learned IOS and the importance of cold emails</span>
                 </div>
             </a>
-            <a href="projects/wyr.html" class="project-card">
+            <a href="projects/wyr.html" class="project-card" data-category="web">
                 <div class="project-image">
                     <img src="photos/wyrScreenshot1.png" alt="Wyr">
                 </div>
@@ -181,7 +192,7 @@
                     <span class="impact-tag">🚀 Reached 700 students in 3 days, led as PM</span>
                 </div>
             </a>
-            <a href="projects/newTabBackgroundImageGenerator.html" class="project-card">
+            <a href="projects/newTabBackgroundImageGenerator.html" class="project-card" data-category="ai">
                 <div class="project-image">
                     <img src="photos/newTabImage.png" alt="New Tab with Background Image">
                 </div>
@@ -191,7 +202,7 @@
                     <span class="impact-tag">🚀 Explored image generation models and have photos that inspire myself when I start my day </span>
                 </div>
             </a>
-            <a href="projects/rustewed.html" class="project-card">
+            <a href="projects/rustewed.html" class="project-card" data-category="web">
                 <div class="project-image">
                     <img src="photos/rustewed1.png" alt="rustewed">
                 </div>
@@ -202,7 +213,7 @@
                     <span class="impact-tag">🚀 Explored building React sites with user-generated content</span>
                 </div>
             </a>
-            <a href="projects/rankedchoice.html" class="project-card">
+            <a href="projects/rankedchoice.html" class="project-card" data-category="web">
                 <div class="project-image">
                     <img src="photos/RankedChoiceBot2.png" alt="Ranked Voting Choice Bot">
                 </div>
@@ -212,7 +223,7 @@
                     <span class="impact-tag">🚀 Won 1st place at Rutgers Hackathon, learned Javacord</span>
                 </div>
             </a>
-            <a href="projects/backpack.html" class="project-card">
+            <a href="projects/backpack.html" class="project-card" data-category="web">
                 <div class="project-image">
                     <img src="photos/knap1.png" alt="Backpack Optimizer">
                 </div>
@@ -222,7 +233,7 @@
                     <span class="impact-tag">🚀 Explored building chrome extensions</span>
                 </div>
             </a>
-            <a href="projects/PressingEnter.html" class="project-card">
+            <a href="projects/PressingEnter.html" class="project-card" data-category="web">
                 <div class="project-image">
                     <img src="photos/PressingEnter.png" alt="Pressing Enter">
                 </div>
@@ -232,7 +243,7 @@
                     <span class="impact-tag">🚀 Solved a problem I had</span>
                 </div>
             </a>
-            <a href="projects/thelx.html" class="project-card">
+            <a href="projects/thelx.html" class="project-card" data-category="web">
                 <div class="project-image">
                     <img src="photos/LX1.png" alt="The LX">
                 </div>
@@ -249,7 +260,7 @@
     <section id="contact" class="contact-section">
         <div class="section-header animate-fadeInUp">
             <h2>Contact</h2>
-            <p class="section-description">Let's connect! Feel free to reach out through any of these channels.</p>
+        <p class="section-description">If you're building something exciting or need a data-driven PM, let's talk.</p>
         </div>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/zachsgoldman/" class="contact-item">
@@ -287,5 +298,6 @@
     <!-- Add before closing body tag -->
     <script src="js/particles.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/filters.js"></script>
 </body>
 </html>

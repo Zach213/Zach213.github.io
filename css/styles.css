@@ -55,7 +55,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 8rem 2rem 4rem;
+    padding: 12rem 2rem 4rem;
     text-align: center;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     position: relative;
@@ -237,7 +237,11 @@ body {
     }
 
     .hero {
-        padding: 6rem 1rem 3rem;
+        padding-top: 14rem;
+    }
+
+    .profile-img {
+        margin-top: 2rem;
     }
 
     .projects-gallery {
@@ -1449,6 +1453,47 @@ footer {
     font-weight: 600;
     margin-right: 0.5rem;
     display: inline-block;
+}
+
+/* Add these styles for resilience cards */
+.resilience-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.resilience-cards .card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 2px solid var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.resilience-cards .card:hover {
+    transform: translateY(-3px);
+}
+
+.resilience-cards .card h3 {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.resilience-cards .card p {
+    color: #636e72;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Add media query for better mobile responsiveness */
+@media (max-width: 768px) {
+    .resilience-cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 

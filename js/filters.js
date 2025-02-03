@@ -8,9 +8,9 @@ function filterProjects(category) {
         }
     });
 
-    // Filter projects
-    const projects = document.querySelectorAll('.other-projects .project-card');
-    projects.forEach(project => {
+    // Filter both featured and other projects
+    const allProjects = document.querySelectorAll('.featured-projects .project-card, .other-projects .project-card');
+    allProjects.forEach(project => {
         if (category === 'all' || project.dataset.category === category) {
             project.classList.remove('hidden');
             project.style.animation = 'none';

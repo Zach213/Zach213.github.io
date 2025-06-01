@@ -20,12 +20,35 @@
 </head>
 
 <body>
+    <style>
+        .navbar {
+            background-color: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links a {
+            color: white;
+        }
+
+        .nav-links a:hover {
+            color: #66b3ff;
+        }
+
+        .logo {
+            color: white;
+        }
+
+        .logo:hover {
+            color: #66b3ff;
+        }
+    </style>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-content">
             <a href="index.html" class="logo">ZG</a>
             <div class="nav-links">
-                <a href="anecdotes.html">Anecdotes</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -34,18 +57,341 @@
 
     <header class="hero">
         <div class="particle-canvas"></div>
-        <div class="hero-content animate-fadeInUp">
-            <img src="photos/circle-cropped.png" class="profile-img" alt="pic of Zach">
-            <div class="intro-content">
-                <p style="color: black;">Hi, I'm Zach! I'm passionate about leveraging AI research into products that democratize AI- I've built Operator for folks who have limited mobility, Deep Research for Nonprofits, and ChatGPT but ranking for those unable to express preferences with words.
-                    Since January I've built & launched 5 AI agents focused on real-world applications—from nutrition analysis using LLMs to AI-powered decision-making tools (Nutrition Agent, TierListGPT, board member agent, Hackathon project, and one coming soon).
-                    Currently running a <a href="https://zachsgold.substack.com/p/hi-to-6-in-3" style="color: #66b3ff; text-decoration: none; border-bottom: 1px solid #66b3ff;">bootstrapped incubator.</a>
-                    Beyond tech, I've tried to explore life deeply: finessing my way into the Library of Congress with an email receipt to research PM methods when it was closed, building ML models to predict satisfaction based on college major choice, and coding tools for students and nonprofits. <br><br><a href="anecdotes.html">Some anecdotes</a></p>    
+        
+        <!-- Introduction Section -->
+        <div class="intro-section">
+            <h2>Hi, I'm Zach!</h2>
+            <p>I'm passionate about leveraging AI research into products that democratize AI- I've built Operator for folks who have limited mobility, Deep Research for Nonprofits, and ChatGPT but ranking for those unable to express preferences with words. Currently running a <a href="https://zachsgold.substack.com/p/hi-to-6-in-3" style="color: #66b3ff; text-decoration: none; border-bottom: 1px solid #66b3ff;">bootstrapped incubator</a>.</p>
+            <p style="margin-top: 20px; font-size: 1.2rem;">some anecdotes</p>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <div class="map-container">
+                <div class="content-container">
+                    <!-- Story Content -->
+                    <div class="story-content" id="openai">
+                        <p>Was referred to OpenAI then told I was too green by a hiring manager, so cold dmed my way to the VP who I sent a video saying I'd prove a new version of RLHF worked better - in 4 days I built a fullstack site to test it with A/B tests from scratch, sat in starbucks near Seattle University to test it with 30+ Gen Z including grad students and sent them a <a href="projects/TierListGPT.html" style="color: #66b3ff; text-decoration: none; border-bottom: 1px solid #66b3ff;">summary of findings</a>.</p>
+                    </div>
+
+                    <div class="story-content" id="hackathon">
+                        <p>Was rejeected from the hackathon so dm'd SPC fellows for a week. Found out with 12 hours notice one had referred me in after a chat & booked a flight immediately. Convinced them to let me as the only solo hacker & won finalistt where I pitched live. Eventually integraated into yellow pages.</p>
+                    </div>
+
+                    <div class="story-content" id="game-of-thrones">
+                        <ul>
+                            <li>Was told to let an Edge feature die: instead, convinced 5 marketing directors to launch a campaign for a feature before it even shipped—then used that momentum to force product leadership to greenlight it that saved the feature and led to a 7x retention gain.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-content" id="agents-hackathon">
+                        <p>Organized the <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv?utm_source=share&utm_medium=member_desktop&rcm=ACoAACugkQ0BAFg4YGBfMLmj4i2S3Nd-UYnVtMs" style="color: #66b3ff; text-decoration: none; border-bottom: 1px solid #66b3ff;">world's first AI Agents for Good Hackathon</a> from scratch.</p>
+                    </div>
+
+                    <div class="story-content" id="balancing">
+                        <p>While dealing with the political maneuvering:</p>
+                        <ul>
+                            <li>Led competitive analysis on AI Agents for Microsoft for 6 months (built a competitive analysis agent myself).</li>
+                            <li>Caught & fixed two separate bugs that would have broken Windows Copilot for millions of users.</li>
+                            <li>Acted essentially as principal applied scientist assigning work items (at some points reviewing PRs) to a team of 5 scientists representing the Edge org alongside GPMs from Windows & Bing in reporting & analyzing core Copilot metrics daily directly to leadership.</li>
+                            <li>Balanced all of this while building TalkMode, living in a spider-infested Airbnb with bronchitis.</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-content" id="running-app">
+                        <p>Back in 2023, my favorite app while learning how to run was WeavRun, an IOS app that changed the pace of the music playing when you sped up. One issue I had is that when I'd go running I'd often fall below the pace I wanted to go at but didn't get real-time feedback or motivation during the moment. I <a href="projects/pocketcoach.html" style="color: #66b3ff; text-decoration: none; border-bottom: 1px solid #66b3ff;">emailed the company with the feature idea</a>, got a meeting with the Head of Product 4 days later, and came to that meeting with a full working prototype having learned Swift over the weekend. I got design feedback and an offer to be added as a developer to WeavRun so I could use it after they shut it down! I also had a buzzing mode instead of noise for folks with limited hearing.</p>
+                    </div>
+                </div>
+
+                <div class="bubbles-container">
+                    <!-- Story Points -->
+                    <div class="story-point" data-story="openai" data-title="Pitching OpenAI VPs with Starbucks & a referral"></div>
+                    <div class="story-point" data-story="hackathon" data-title="Cold-messaging my way into being the only solo finalist at an Anthropic/SPC hackathon"></div>
+                    <div class="story-point" data-story="game-of-thrones" data-title="Microsoft AI political maneuvering to save a feature"></div>
+                    <div class="story-point" data-story="agents-hackathon" data-title="Hosting the world's first agents for nonprofits events"></div>
+                    <div class="story-point" data-story="balancing" data-title="Urgent care visits, agents, and startups"></div>
+                    <div class="story-point" data-story="running-app" data-title="Building a feature I wanted over a weekend to pitch my favorite app to add it"></div>
+                </div>
             </div>
         </div>
     </header>
-    
 
+    <style>
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            background: #0a0a0a;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%),
+                repeating-linear-gradient(45deg, 
+                    rgba(255, 255, 255, 0.03) 0px, 
+                    rgba(255, 255, 255, 0.03) 1px,
+                    transparent 1px, 
+                    transparent 10px
+                );
+            background-size: 100% 100%, 20px 20px;
+        }
+
+        .intro-section {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            margin-top: 10px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .intro-section h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro-section p {
+            color: white;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            padding: 0 40px;
+            margin-top: 40px;
+            flex-direction: row-reverse;
+        }
+
+        .bubbles-container {
+            width: 220px;
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .content-container {
+            flex: 1;
+            position: relative;
+            padding: 20px;
+        }
+
+        .story-point {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0;
+            z-index: 2;
+        }
+
+        .story-point::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #4a9eff;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(74, 158, 255, 0.3);
+            transition: all 0.3s ease;
+            margin-bottom: 8px;
+        }
+
+        .story-point::after {
+            content: attr(data-title);
+            color: #fff;
+            font-size: 0.7rem;
+            text-align: center;
+            white-space: normal;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            max-width: 180px;
+            line-height: 1.2;
+        }
+
+        .story-point:hover::before {
+            transform: scale(1.5);
+            background: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        .story-point.active::before {
+            background: #fff;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+            }
+            50% {
+                box-shadow: 0 0 60px rgba(255, 255, 255, 1);
+            }
+            100% {
+                box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        .story-point.active::after {
+            opacity: 1;
+            color: #fff;
+        }
+
+        .story-content {
+            position: fixed;
+            top: 60%;
+            right: 60px;
+            transform: translateY(-50%) scale(0.95);
+            width: 45%;
+            max-width: 600px;
+            color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: left;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .story-content.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) scale(1);
+        }
+
+        .story-content p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.4;
+            margin: 0 0 12px 0;
+            font-size: 0.75rem;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .story-content ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        .story-content li {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.4;
+            margin: 8px 0;
+            font-size: 0.75rem;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .story-content li::before {
+            content: "•";
+            color: #66b3ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        @media (max-width: 768px) {
+            .intro-section {
+                margin-top: 5px;
+                padding: 15px;
+            }
+
+            .intro-section h2 {
+                font-size: 2rem;
+            }
+
+            .intro-section p {
+                font-size: 1rem;
+            }
+
+            .map-container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .bubbles-container {
+                width: 100%;
+                padding: 20px 0;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .content-container {
+                padding: 20px 0;
+            }
+
+            .story-content {
+                position: relative;
+                top: auto;
+                right: auto;
+                transform: none;
+                width: 100%;
+                max-width: none;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            .story-content.active {
+                transform: none;
+            }
+
+            .story-point {
+                margin: 10px;
+                flex: 0 0 auto;
+            }
+
+            .story-point::after {
+                font-size: 0.7rem;
+                max-width: 100px;
+            }
+
+            .story-content p, .story-content li {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .story-content ul {
+                padding-left: 15px;
+            }
+
+            .story-content li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
@@ -279,5 +625,44 @@
     <script src="js/particles.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/filters.js"></script>
+    <script>
+        document.querySelectorAll('.story-point').forEach(point => {
+            point.addEventListener('click', () => {
+                const storyId = point.getAttribute('data-story');
+                const storyContent = document.getElementById(storyId);
+                
+                // If the clicked point is already active, close it
+                if (point.classList.contains('active')) {
+                    storyContent.classList.remove('active');
+                    point.classList.remove('active');
+                    return;
+                }
+                
+                // Close any open stories
+                document.querySelectorAll('.story-content.active').forEach(content => {
+                    content.classList.remove('active');
+                });
+                document.querySelectorAll('.story-point.active').forEach(p => {
+                    p.classList.remove('active');
+                });
+
+                // Open clicked story
+                storyContent.classList.add('active');
+                point.classList.add('active');
+            });
+        });
+
+        // Close story when clicking outside
+        document.querySelector('.map-container').addEventListener('click', (e) => {
+            if (e.target.classList.contains('map-container')) {
+                document.querySelectorAll('.story-content.active').forEach(content => {
+                    content.classList.remove('active');
+                });
+                document.querySelectorAll('.story-point.active').forEach(point => {
+                    point.classList.remove('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

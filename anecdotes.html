@@ -197,15 +197,24 @@
         @media (max-width: 768px) {
             .map-container {
                 flex-direction: column;
+                height: auto;
+                min-height: 100vh;
             }
 
             .bubbles-container {
-                flex-direction: column;
-                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 80px 20px 20px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
             }
 
             .content-container {
+                padding: 20px;
                 padding-top: 20px;
+                height: auto;
             }
 
             .story-content {
@@ -215,27 +224,72 @@
                 transform: none;
                 width: 90%;
                 max-width: none;
-                margin-top: 20px;
+                margin: 20px auto;
+                padding: 20px;
             }
 
             .story-content.active {
                 transform: none;
             }
 
+            .section-header {
+                position: relative;
+                top: 80px;
+                padding: 0 20px;
+            }
+
             .section-header h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .story-point {
-                margin: 20px 0;
+                margin: 10px;
+                flex: 0 0 auto;
+            }
+
+            .story-point::after {
+                font-size: 0.7rem;
+                max-width: 100px;
+            }
+
+            .story-content p, .story-content li {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .story-content ul {
+                padding-left: 15px;
+            }
+
+            .story-content li {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bubbles-container {
+                padding-top: 60px;
+            }
+
+            .section-header {
+                top: 60px;
+            }
+
+            .section-header h2 {
+                font-size: 1.5rem;
             }
 
             .story-point::after {
                 font-size: 0.65rem;
+                max-width: 80px;
+            }
+
+            .story-content {
+                padding: 15px;
             }
 
             .story-content p, .story-content li {
-                font-size: 0.7rem;
+                font-size: 0.85rem;
             }
         }
     </style>

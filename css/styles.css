@@ -230,28 +230,127 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-content {
-        flex-direction: column;
-        text-align: center;
+        padding: 1rem;
     }
 
     .nav-links {
-        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .nav-links a {
-        margin: 0 1rem;
+        margin: 0;
+        font-size: 0.9rem;
     }
 
     .hero {
-        padding-top: 14rem;
+        padding: 6rem 1rem 3rem;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
     }
 
     .profile-img {
-        margin-top: 2rem;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1.5rem;
     }
 
-    .projects-gallery {
-        grid-template-columns: 1fr;
+    .intro-content {
+        padding: 0 1rem;
+    }
+
+    .intro-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .projects-section {
+        padding: 3rem 1rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .featured-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        margin: 0;
+    }
+
+    .project-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    .impact-tag {
+        font-size: 0.8rem;
+    }
+
+    .contact-section {
+        padding: 3rem 1rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-item {
+        width: 100%;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 5rem 0.5rem 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro-content p {
+        font-size: 0.9rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-info h3 {
+        font-size: 1rem;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
     }
 }
 

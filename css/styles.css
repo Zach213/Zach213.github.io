@@ -39,6 +39,12 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #2d3436;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #0984e3;
 }
 
 .nav-links a {
@@ -1595,6 +1601,206 @@ footer {
     
     .hero {
         padding: 6rem 1rem 3rem;
+    }
+}
+
+/* Achievement Card Styles */
+.achievement-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    padding: 28px;
+    margin: 24px 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.achievement-card h4 {
+    color: #2d3436;
+    margin-bottom: 24px;
+    font-size: 1.3em;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0984e3, #00b894);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Enhanced Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 35px;
+}
+
+.milestone {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.milestone:nth-child(1) { animation-delay: 0.1s; }
+.milestone:nth-child(2) { animation-delay: 0.2s; }
+.milestone:nth-child(3) { animation-delay: 0.3s; }
+.milestone:nth-child(4) { animation-delay: 0.4s; }
+
+.milestone:last-child {
+    margin-bottom: 0;
+}
+
+.milestone-dot {
+    position: absolute;
+    left: -35px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, #0984e3, #00b894);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(9, 132, 227, 0.1);
+    transition: all 0.3s ease;
+}
+
+.milestone-dot::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 14px;
+    bottom: -38px;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(9, 132, 227, 0.2), rgba(0, 184, 148, 0.1));
+    transform: translateX(-50%);
+}
+
+.milestone:last-child .milestone-dot::before {
+    display: none;
+}
+
+.milestone p {
+    margin: 0;
+    line-height: 1.7;
+    color: #636e72;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.achievement-card:hover .milestone-dot {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 6px rgba(9, 132, 227, 0.15);
+}
+
+.achievement-card:hover .milestone p {
+    color: #2d3436;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments for achievement cards */
+@media (max-width: 768px) {
+    .achievement-card {
+        padding: 20px;
+        margin: 16px 0;
+    }
+
+    .achievement-card h4 {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .milestone {
+        padding-left: 12px;
+        margin-bottom: 16px;
+    }
+
+    .milestone-dot {
+        left: -25px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .milestone p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Achievement Cards Grid Layout */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Updated Achievement Card Styles */
+.achievement-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.achievement-card h4 {
+    color: #2d3436;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0984e3, #00b894);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievement-card p {
+    color: #636e72;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .achievement-card {
+        padding: 1.25rem;
+    }
+
+    .achievement-card h4 {
+        font-size: 1.1em;
+    }
+
+    .achievement-card p {
+        font-size: 0.9rem;
     }
 }
 

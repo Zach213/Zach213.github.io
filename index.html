@@ -116,7 +116,7 @@
             </div>
         </div>
     </header>
-
+    
     <style>
         .hero {
             position: relative;
@@ -350,48 +350,67 @@
             .map-container {
                 flex-direction: column;
                 padding: 0 20px;
+                margin-top: 20px;
             }
 
             .bubbles-container {
                 width: 100%;
-                padding: 20px 0;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
-                align-items: center;
+                justify-content: center;
             }
 
             .content-container {
-                padding: 20px 0;
+                padding: 10px;
             }
 
             .story-content {
-                position: relative;
-                top: auto;
-                right: auto;
+                position: static;
                 transform: none;
                 width: 100%;
                 max-width: none;
-                margin: 20px auto;
-                padding: 20px;
+                margin: 10px 0;
+                padding: 15px;
+                opacity: 1;
+                visibility: visible;
+                display: none;
             }
 
             .story-content.active {
+                display: block;
                 transform: none;
             }
 
             .story-point {
-                margin: 10px;
-                flex: 0 0 auto;
+                margin: 0;
+                padding: 10px;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .story-point::before {
+                margin: 0;
+                width: 8px;
+                height: 8px;
             }
 
             .story-point::after {
-                font-size: 0.7rem;
-                max-width: 100px;
+                font-size: 0.8rem;
+                max-width: none;
+                text-align: left;
+                opacity: 1;
             }
 
-            .story-content p, .story-content li {
+            .story-content p, 
+            .story-content li {
                 font-size: 0.9rem;
                 line-height: 1.5;
             }
@@ -401,7 +420,63 @@
             }
 
             .story-content li {
-                margin: 10px 0;
+                margin: 8px 0;
+            }
+
+            /* Project cards optimization for mobile */
+            .featured-projects,
+            .other-projects {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 10px;
+            }
+
+            .project-card {
+                margin: 0;
+            }
+
+            .project-filters {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 10px;
+                justify-content: center;
+            }
+
+            .filter-btn {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+                margin: 0;
+            }
+
+            /* Contact section optimization */
+            .contact-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .contact-item {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Additional styles for very small screens */
+        @media (max-width: 380px) {
+            .bubbles-container {
+                grid-template-columns: 1fr;
+            }
+
+            .story-point::after {
+                font-size: 0.75rem;
+            }
+
+            .intro-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .intro-section p {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -592,14 +667,14 @@
     <section id="contact" class="contact-section">
         <div class="section-header animate-fadeInUp">
             <h2>Contact</h2>
-        <p class="section-description">
-            I'm looking to connect with:
-            <br>✅ AI labs, researchers, and builders working on research that can be applied to real-world problems
-            <br><br>
-            I'm focused on AI agents, human-AI collaboration, and scaling AI in real-world settings. Let's chat!
-            <br><br>
-            📩 DM me or reach out below.
-        </p>
+            <p class="section-description">
+                I'm looking to connect with:
+                <br>✅ AI labs, researchers, and builders working on research that can be applied to real-world problems
+                <br><br>
+                I'm focused on AI agents, human-AI collaboration, and scaling AI in real-world settings. Let's chat!
+                <br><br>
+                📩 DM me or reach out below.
+            </p>
         </div>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/zachsgoldman/" class="contact-item">
@@ -618,6 +693,10 @@
                 <i class="fas fa-envelope"></i>
                 <span id="email-link" style="cursor: pointer;" onclick="copyEmail()">Email (click to copy)</span>
             </div>
+            <a href="resume_zachary_goldman.pdf" class="contact-item" download>
+                <i class="fas fa-file-alt"></i>
+                Resume
+            </a>
             <script>
                 function copyEmail() {
                     navigator.clipboard.writeText('zacharygoldman@gmail.com').then(() => {
@@ -627,9 +706,6 @@
                     });
                 }
             </script>
-            
-            
-
         </div>
     </section>
 

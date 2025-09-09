@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Pages | Zach Goldman</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">ZG</a>
+            <div class="nav-links">
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#about">About</a>
+                <a href="https://github.com/Zach213">Github</a>
+                <a href="https://www.linkedin.com/in/zachsgoldman/">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <header class="project-hero">
+        <div class="project-hero-content">
+            <h1>Yellow Pages</h1>
+            <p class="project-tagline">Screenshots, not summaries - Deep research agent for nonprofit social service monitoring.</p>
+        </div>
+    </header>
+    
+    <section class="project-section">
+        <div class="project-flex-container">
+            <div class="project-about">
+                <h2>About Yellow Pages</h2>
+                <p class="project-description">
+                    For Sprint 1 of my bootstrapped incubator, I helped nonprofits keep their social service directories up to date. Currently they spend hours going through doctors' or pro bono legal websites to make sure they're directing clients to the right contact info, but it leads to typos/duplicates, preventing successful referrals (just over half in one nonprofit) and people getting the care they need.
+                    <br><br>
+                    I built Yellow Pages, a website to have LLMs monitor and summarize website changes, de-duplicate their existing data, and verify new information via screenshots with a from-scratch built computer-use deep research agent 10x faster and 3x cheaper than OpenAI's since other deep research tools were too slow, unreliable, and expensive for contact details.
+                    <br><br>
+                    Since my February Agents for Nonprofits hackathon, 2 nonprofits have been helped with the features and now a 3rd is using the actual site, saving hundreds of hours.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="https://www.youtube.com/watch?v=7mRDwQm1BZc" class="cta-button">Watch Demo</a>
+                </div>
+            </div>
+            
+            <div class="project-demo">
+                <h2>Demo Video</h2>
+                <div class="video-container">
+                    <iframe 
+                        width="480" 
+                        height="270" 
+                        src="https://www.youtube.com/embed/7mRDwQm1BZc"
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <main class="project-content">
+        <div class="project-overview">
+            <div class="project-details-grid">
+                <div class="project-detail-box">
+                    <h4>Problem</h4>
+                    <p>Nonprofits manually re-check 5k+ websites every quarter to keep contact info accurate. % of successful referrals bottlenecked by directory lacking emails that existed on provider sites.</p>
+                </div>
+                <div class="project-detail-box">
+                    <h4>Solution</h4>
+                    <p>All-in-one website with autonomous agents that notify of semantic website changes, de-duplication algorithms, and screenshot proof instead of summaries.</p>
+                </div>
+                <div class="project-detail-box">
+                    <h4>Impact</h4>
+                    <p>Found duplicates, ~10% of websites with errors, and outdated information through 10k+ providers. Nonprofits now use it to save hours determining which websites to prioritize.</p>
+                </div>
+                <div class="project-detail-box">
+                    <h4>Technology</h4>
+                    <p>10x faster deep research agent, semantic change detection, CSV processing, and headless browser automation with screenshot verification.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Sprint 1 Validation</h2>
+            <div class="achievement-card">
+                <h4>Three Key Hypotheses Tested</h4>
+                <div class="timeline">
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p><strong>Screenshots > Summaries:</strong> ✅ Validated - Screenshots save time verifying lack of hallucinations & seen as valuable compared to URL/text sourcing</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p><strong>Website Monitoring Killer Use Case:</strong> ✅ Validated - Nonprofits struggling to keep up to date with social service referrals</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p><strong>Nonprofit Payment Model:</strong> ❌ Invalidated - Not seen as high value enough to pay with limited resources, but extremely interested in using</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Innovation</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h4>Deep Research Agent</h4>
+                    <p>Built from-scratch agent 10x faster than OpenAI's by defaulting to looking for contact information on page, then scrolling conditionally alongside optimizations for finding contact info.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h4>De-duplication Algorithm</h4>
+                    <p>Finds value counts of each variable, sends to LLM to identify stable vs typo variables, uses blocking to group similar entries, then batch processes differences.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h4>Cost Efficiency</h4>
+                    <p>Used GPT-4.1-nano for cost and Claude Haiku for context. Total cost: $50 to identify 1k+ actionable insights on 5k websites vs $200 for competing solutions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Learnings</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h4>Minimum Value Prop</h4>
+                    <p>Nonprofits cared more about analysis than direct control. Privacy implications of CSV uploads required approvals, so pivoted to recreating directories via public scraping.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h4>Technical Challenges</h4>
+                    <p>Web is dynamic with shadow DOM, lazy loading, A/B tests. Built deterministic output system to determine real changes vs arbitrary differences.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <h4>User Focus</h4>
+                    <p>UI solving user problems > tech complexity. Checkbox verification system, crisp LLM explanations mattered more than fancy algorithms. Decision-makers over operators for adoption.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Origin Story</h2>
+            <div class="achievement-card">
+                <h4>From Hackathon to Product</h4>
+                <div class="timeline">
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p>February 2024: Organized world's first AI Agents for Nonprofits hackathon</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p>Recruited 8 collaborators from top tech companies, helped 2 nonprofits with data de-duplication</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p>Became finalist at Anthropic/SPC event, built agent to grab missing email information</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-dot"></div>
+                        <p>Connected with 3rd nonprofit in May, built full site with semantic flagging and screenshot proof</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

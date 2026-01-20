@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome History Scroller | Zach Goldman</title>
+    <link rel="icon" href="../favicon.ico">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .back-link {
+            display: inline-block;
+            padding: 24px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { color: #333; }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        .tagline {
+            color: #666;
+            margin-bottom: 32px;
+            font-size: 1rem;
+        }
+        .image-container {
+            margin-bottom: 40px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        .section {
+            margin-bottom: 32px;
+        }
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        .description {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 16px 60px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← home</a>
+
+    <div class="container">
+        <h1>Chrome History Scroller</h1>
+        <p class="tagline">Python script to scroll through Chrome history to a specific date</p>
+
+        <div class="image-container">
+            <img src="../photos/PressingEnter.png" alt="Script screenshot">
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">About</h2>
+            <p class="description">
+                Chrome didn't let me search for history on a specific date. 
+                This simple Python script presses spacebar repeatedly so I could scroll back 
+                to my Chrome history of a given day. A fun pocket script that solved my problem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

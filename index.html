@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFNX0MTJWW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FFNX0MTJWW');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Goldman</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 80px 24px 60px;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 48px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .header a {
+            color: #1a1a1a;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .header a:hover {
+            color: #666;
+        }
+
+        /* Links */
+        .links {
+            margin-bottom: 48px;
+            font-size: 0.95rem;
+        }
+
+        .links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+            transition: border-color 0.2s;
+        }
+
+        .links a:hover {
+            border-color: #1a1a1a;
+        }
+
+        .links span {
+            color: #ccc;
+            margin: 0 12px;
+        }
+
+        /* Anecdotes */
+        .anecdotes-section {
+            margin-bottom: 48px;
+        }
+
+        .anecdotes-section h2 {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        .anecdote {
+            border-bottom: 1px solid #eee;
+        }
+
+        .anecdote:first-of-type {
+            border-top: 1px solid #eee;
+        }
+
+        .anecdote-header {
+            padding: 16px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.2s;
+        }
+
+        .anecdote-header:hover {
+            color: #666;
+        }
+
+        .anecdote-title {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .anecdote-toggle {
+            font-size: 1.2rem;
+            color: #ccc;
+            transition: transform 0.3s, color 0.2s;
+            line-height: 1;
+        }
+
+        .anecdote.open .anecdote-toggle {
+            transform: rotate(45deg);
+            color: #1a1a1a;
+        }
+
+        .anecdote-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .anecdote.open .anecdote-content {
+            max-height: 500px;
+        }
+
+        .anecdote-content-inner {
+            padding: 0 0 20px 0;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .anecdote-content-inner a {
+            color: #1a1a1a;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .anecdote-content-inner a:hover {
+            color: #666;
+        }
+
+        .anecdote-content-inner ul {
+            margin: 12px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .anecdote-content-inner li {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 60px 20px 40px;
+            }
+
+            .header h1 {
+                font-size: 1.3rem;
+            }
+
+            .header p {
+                font-size: 0.95rem;
+            }
+
+            .anecdote-title {
+                font-size: 0.9rem;
+            }
+
+            .anecdote-content-inner {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Hey, I'm Zach</h1>
+            <p>Building <a href="https://www.linkedin.com/feed/update/urn:li:activity:7395898398282989568/" target="_blank">Portal (SPC F25)</a>. Previously doing a <a href="https://zachsgold.substack.com/p/hi-to-6-in-3" target="_blank">self-directed incubator</a>.</p>
+        </header>
+
+        <!-- Links -->
+        <nav class="links">
+            <a href="projects.html">projects</a>
+            <span>·</span>
+            <a href="writings.html">writings</a>
+        </nav>
+
+        <!-- Anecdotes -->
+        <section class="anecdotes-section">
+            <h2>Some anecdotes</h2>
+
+            <div class="anecdote">
+                <div class="anecdote-header" onclick="toggleAnecdote(this)">
+                    <span class="anecdote-title">Cold-messaging my way to SPC founder fellow</span>
+                    <span class="anecdote-toggle">+</span>
+                </div>
+                <div class="anecdote-content">
+                    <div class="anecdote-content-inner">
+                        Was pitching <a href="projects/TalkMode.html">TalkMode</a> to Microsoft/OpenAI & thought getting the CPO of Anthropic to say it was a good idea would help. Saw an SPC hackathon with Anthropic - but got rejected. DM'd 15 SPC members, got in with 12 hours notice, booked a flight immediately. Convinced them to let me be the only solo hacker, won finalist with <a href="https://x.com/finn_meeks/status/1911878261509935534" target="_blank">Yellow Pages</a> from <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">my nonprofit hackathon</a>, got to go to event with CPO of Anthropic - asked him about computer use/accessibility which he said was a great idea - used in pitch later. Months later accepted as SPC member then founder fellow a week in.
+                    </div>
+                </div>
+            </div>
+
+            <div class="anecdote">
+                <div class="anecdote-header" onclick="toggleAnecdote(this)">
+                    <span class="anecdote-title">Referred to OpenAI & cold dm'ing the VP</span>
+                    <span class="anecdote-toggle">+</span>
+                </div>
+                <div class="anecdote-content">
+                    <div class="anecdote-content-inner">
+                        Was referred to OpenAI then told I was too green by a hiring manager, so cold dmed my way to the VP who I sent a video saying I'd prove a new version of RLHF worked better - in 4 days I built a fullstack site to test it with A/B tests from scratch, sat in starbucks near Seattle University to test it with 30+ Gen Z including grad students and sent them a <a href="projects/TierListGPT.html">summary of findings</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="anecdote">
+                <div class="anecdote-header" onclick="toggleAnecdote(this)">
+                    <span class="anecdote-title">Microsoft AI political maneuvering to save a feature</span>
+                    <span class="anecdote-toggle">+</span>
+                </div>
+                <div class="anecdote-content">
+                    <div class="anecdote-content-inner">
+                        Was told to let an Edge feature die. Instead, bundled the PR with a Copilot fix, convinced 5 marketing directors to launch a campaign for a feature before it even shipped—then used that momentum to force product leadership to greenlight it. Saved the feature and led to a 7x retention gain.
+                    </div>
+                </div>
+            </div>
+
+            <div class="anecdote">
+                <div class="anecdote-header" onclick="toggleAnecdote(this)">
+                    <span class="anecdote-title">Hosting the world's first agents for nonprofits hackathon</span>
+                    <span class="anecdote-toggle">+</span>
+                </div>
+                <div class="anecdote-content">
+                    <div class="anecdote-content-inner">
+                        Organized the <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">world's first AI Agents for Good Hackathon</a> from scratch.
+                    </div>
+                </div>
+            </div>
+
+            <div class="anecdote">
+                <div class="anecdote-header" onclick="toggleAnecdote(this)">
+                    <span class="anecdote-title">Urgent care visits, agents, and startups</span>
+                    <span class="anecdote-toggle">+</span>
+                </div>
+                <div class="anecdote-content">
+                    <div class="anecdote-content-inner">
+                        While dealing with the political maneuvering:
+                        <ul>
+                            <li>Led competitive analysis on AI Agents for Microsoft for 6 months (built a competitive analysis agent myself).</li>
+                            <li>Caught & fixed two separate bugs that would have broken Windows Copilot for millions of users.</li>
+                            <li>Acted essentially as principal applied scientist assigning work items (at some points reviewing PRs) to a team of 5 scientists representing the Edge org alongside GPMs from Windows & Bing in reporting & analyzing core Copilot metrics daily directly to leadership.</li>
+                            <li>Balanced all of this while building TalkMode, living in a spider-infested Airbnb with bronchitis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anecdote">
+                <div class="anecdote-header" onclick="toggleAnecdote(this)">
+                    <span class="anecdote-title">Built Apple's Workout Buddy 2 years earlier</span>
+                    <span class="anecdote-toggle">+</span>
+                </div>
+                <div class="anecdote-content">
+                    <div class="anecdote-content-inner">
+                        Back in 2023, my favorite app while learning how to run was WeavRun, an IOS app that changed the pace of the music playing when you sped up. One issue I had is that when I'd go running I'd often fall below the pace I wanted to go at but didn't get real-time feedback or motivation during the moment. I <a href="projects/pocketcoach.html">emailed the company with the feature idea</a>, got a meeting with the Head of Product 4 days later, and came to that meeting with a full working prototype having learned Swift over the weekend. I got design feedback and an offer to be added as a developer to WeavRun so I could use it after they shut it down! I also had a buzzing mode instead of noise for folks with limited hearing. 2 years later Apple launched Workout Buddy - validating the pain point.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleAnecdote(header) {
+            const anecdote = header.parentElement;
+            const wasOpen = anecdote.classList.contains('open');
+            
+            // Close all anecdotes
+            document.querySelectorAll('.anecdote').forEach(a => {
+                a.classList.remove('open');
+            });
+            
+            // If it wasn't open, open it
+            if (!wasOpen) {
+                anecdote.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>

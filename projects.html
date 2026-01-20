@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFNX0MTJWW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FFNX0MTJWW');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Zach Goldman</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 24px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 48px;
+            font-size: 0.95rem;
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .project-list {
+            list-style: none;
+        }
+
+        .project-item {
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-link {
+            display: block;
+            padding: 16px 0;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s ease;
+        }
+
+        .project-link:hover {
+            background: #f5f5f5;
+            margin: 0 -12px;
+            padding: 16px 12px;
+        }
+
+        .project-name {
+            font-weight: 500;
+            color: #111;
+            margin-bottom: 4px;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .project-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 6px;
+        }
+
+        .new-tag {
+            font-size: 0.7rem;
+            color: #fff;
+            background: #111;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 16px 60px;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            .project-link:hover {
+                margin: 0 -8px;
+                padding: 16px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-link">← home</a>
+
+    <div class="container">
+        <h1>Projects</h1>
+        <p class="subtitle">Things I've built</p>
+
+        <div class="section">
+            <h2 class="section-title">Recent</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="projects/extended.html" class="project-link">
+                        <div class="project-name">Extended <span class="new-tag">new</span></div>
+                        <div class="project-desc">Talk to any website and reshape how it works. Browser overlay that builds Chrome extensions through conversation.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/yellowpages.html" class="project-link">
+                        <div class="project-name">Yellow Pages <span class="new-tag">new</span></div>
+                        <div class="project-desc">Deep research agent for nonprofits. 10x faster than OpenAI's at finding contact info with screenshot proof.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/TalkMode.html" class="project-link">
+                        <div class="project-name">TalkMode <span class="new-tag">new</span></div>
+                        <div class="project-desc">Computer use agent helping people with disabilities navigate the web. Featured by Google Chrome Web Store.</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">AI Explorations</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="projects/agentComparison.html" class="project-link">
+                        <div class="project-name">MultiOn vs Claude Computer Use</div>
+                        <div class="project-desc">Comparison of AI agents on 5 use cases measuring accuracy and speed.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/TierListGPT.html" class="project-link">
+                        <div class="project-name">TierListGPT</div>
+                        <div class="project-desc">Ranking-based LLM interaction for structured decision-making.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/NutritionAgent.html" class="project-link">
+                        <div class="project-name">Nutrition Agent</div>
+                        <div class="project-desc">Chrome extension that estimates calories from menu items using Google Review photos.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/CAPTCHAAudio.html" class="project-link">
+                        <div class="project-name">Audio CAPTCHA Experiment</div>
+                        <div class="project-desc">Testing if GPT-4o can solve audio captchas with transcription tools.</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Apps & Tools</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="projects/pocketcoach.html" class="project-link">
+                        <div class="project-name">PocketCoach</div>
+                        <div class="project-desc">iOS app that plays motivational messages when runners fall below their pace.</div>
+                        <div class="project-tag">Voted most creative at Rutgers CS showcase</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/wyr.html" class="project-link">
+                        <div class="project-name">Would You Recommend</div>
+                        <div class="project-desc">Better professor ratings for Rutgers students.</div>
+                        <div class="project-tag">700 users in 3 days</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/newTabBackgroundImageGenerator.html" class="project-link">
+                        <div class="project-name">AI Image New Tab</div>
+                        <div class="project-desc">Chrome extension that generates a new AI image for your new tab page every day.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/rankedchoice.html" class="project-link">
+                        <div class="project-name">Ranked Choice Voting Bot</div>
+                        <div class="project-desc">Discord bot for ranked-style polling.</div>
+                        <div class="project-tag">1st place at Rutgers Hackathon</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/backpack.html" class="project-link">
+                        <div class="project-name">Backpack Optimizer</div>
+                        <div class="project-desc">Chrome extension that optimizes schedules using the knapsack algorithm.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/PressingEnter.html" class="project-link">
+                        <div class="project-name">Chrome History Scroller</div>
+                        <div class="project-desc">Script that scrolls through your Chrome history to find a specific date.</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Web Projects</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="projects/rustewed.html" class="project-link">
+                        <div class="project-name">RU Stewed</div>
+                        <div class="project-desc">Website for Rutgers students to share recipes using dining hall ingredients.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/thelx.html" class="project-link">
+                        <div class="project-name">The LX</div>
+                        <div class="project-desc">Forum for upperclassmen to give advice to underclassmen at Rutgers.</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

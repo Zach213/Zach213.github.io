@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Comparison | Zach Goldman</title>
+    <link rel="icon" href="../favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .back-link {
+            display: inline-block;
+            padding: 24px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { color: #333; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        .tagline {
+            color: #666;
+            margin-bottom: 32px;
+            font-size: 1rem;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        .chart-container {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 32px;
+            border: 1px solid #eee;
+        }
+        .chart-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 16px;
+        }
+        .toc {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 32px;
+            border: 1px solid #eee;
+        }
+        .toc ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .toc a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .toc a:hover { color: #111; }
+        .task {
+            background: #fff;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid #eee;
+        }
+        .task h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 8px;
+        }
+        .task-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 16px;
+        }
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .video-box h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        .video-box iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border: none;
+            border-radius: 6px;
+        }
+        .video-box p {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        .metrics-table th, .metrics-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .metrics-table th {
+            font-weight: 500;
+            color: #999;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .metrics-table td { color: #444; }
+        @media (max-width: 700px) {
+            .container { padding: 0 16px 60px; }
+            h1 { font-size: 1.5rem; }
+            .videos { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← home</a>
+
+    <div class="container">
+        <h1>MultiOn vs Claude Computer Use</h1>
+        <p class="tagline">Comparison of real-world performance across 5 tasks (small n, not rigorous)</p>
+
+        <div class="section">
+            <h2 class="section-title">Summary</h2>
+            <div class="chart-container">
+                <p class="chart-note">MultiOn generally performs tasks faster, but Claude tends to be more accurate.</p>
+                <canvas id="accuracyTimeGraph" height="200"></canvas>
+            </div>
+        </div>
+
+        <div class="toc">
+            <ul>
+                <li><a href="#task1">1. Itinerary</a></li>
+                <li><a href="#task2">2. Fantasy Site</a></li>
+                <li><a href="#task3">3. Book Flight</a></li>
+                <li><a href="#task4">4. ML Paper</a></li>
+                <li><a href="#task5">5. Calories</a></li>
+            </ul>
+        </div>
+
+        <div class="task" id="task1">
+            <h2>Task 1: Create a Fully Formatted Itinerary</h2>
+            <p class="task-meta">Prompt: Create a single-page itinerary for a trip to Hawaii using recommendations from Reddit and travel blogs.</p>
+            <div class="videos">
+                <div class="video-box">
+                    <h4>MultiOn</h4>
+                    <iframe src="https://www.youtube.com/embed/qUb6aUxmv0Y" allowfullscreen></iframe>
+                    <p>Blocked on Reddit security; stuck in a loop, failed to include links.</p>
+                </div>
+                <div class="video-box">
+                    <h4>Claude</h4>
+                    <iframe src="https://www.youtube.com/embed/pPTlmETrDKI" allowfullscreen></iframe>
+                    <p>Server errors with Reddit; displayed itinerary but unclear if grounded.</p>
+                </div>
+            </div>
+            <table class="metrics-table">
+                <tr><th>Metric</th><th>MultiOn</th><th>Claude</th></tr>
+                <tr><td>Completed</td><td>No</td><td>Yes</td></tr>
+                <tr><td>Speed</td><td>240s</td><td>200s</td></tr>
+                <tr><td>Accuracy</td><td>20%</td><td>70%</td></tr>
+            </table>
+        </div>
+
+        <div class="task" id="task2">
+            <h2>Task 2: Suggest a Personalized Website</h2>
+            <p class="task-meta">Prompt: Based on my interest in fantasy art, suggest a website or activity.</p>
+            <div class="videos">
+                <div class="video-box">
+                    <h4>MultiOn</h4>
+                    <iframe src="https://www.youtube.com/embed/OLCJu3unofI" allowfullscreen></iframe>
+                    <p>Found and clicked on ArtStation fantasy section after searching Google.</p>
+                </div>
+                <div class="video-box">
+                    <h4>Claude</h4>
+                    <iframe src="https://www.youtube.com/embed/yy6WdFEOtho" allowfullscreen></iframe>
+                    <p>Went to random .com first, then correct site without explanation.</p>
+                </div>
+            </div>
+            <table class="metrics-table">
+                <tr><th>Metric</th><th>MultiOn</th><th>Claude</th></tr>
+                <tr><td>Completed</td><td>Yes</td><td>Yes</td></tr>
+                <tr><td>Speed</td><td>24s</td><td>180s</td></tr>
+                <tr><td>Accuracy</td><td>100%</td><td>90%</td></tr>
+            </table>
+        </div>
+
+        <div class="task" id="task3">
+            <h2>Task 3: Book a Direct Flight</h2>
+            <p class="task-meta">Prompt: Find the most popular beach destination for US travelers in their twenties and book a direct flight for tomorrow morning.</p>
+            <div class="videos">
+                <div class="video-box">
+                    <h4>MultiOn</h4>
+                    <iframe src="https://www.youtube.com/embed/j_t6ds0xH_E" allowfullscreen></iframe>
+                    <p>Wrong date, couldn't select places correctly, got stuck in loop.</p>
+                </div>
+                <div class="video-box">
+                    <h4>Claude</h4>
+                    <iframe src="https://www.youtube.com/embed/mqnD6td92iE" allowfullscreen></iframe>
+                    <p>Searched URLs in search box, recovered but got rate limited.</p>
+                </div>
+            </div>
+            <table class="metrics-table">
+                <tr><th>Metric</th><th>MultiOn</th><th>Claude</th></tr>
+                <tr><td>Completed</td><td>No</td><td>No</td></tr>
+                <tr><td>Speed</td><td>—</td><td>—</td></tr>
+                <tr><td>Accuracy</td><td>0%</td><td>0%</td></tr>
+            </table>
+        </div>
+
+        <div class="task" id="task4">
+            <h2>Task 4: Download and Summarize ML Paper</h2>
+            <p class="task-meta">Prompt: Download the latest ML paper from arXiv, summarize the abstract, and save it in a folder named 'Research'.</p>
+            <div class="videos">
+                <div class="video-box">
+                    <h4>MultiOn</h4>
+                    <iframe src="https://www.youtube.com/embed/ypDli4ls8OE" allowfullscreen></iframe>
+                    <p>Failed to click PDF link; scrolled repeatedly, couldn't download.</p>
+                </div>
+                <div class="video-box">
+                    <h4>Claude</h4>
+                    <iframe src="https://www.youtube.com/embed/EptFPLk8tvs" allowfullscreen></iframe>
+                    <p>Created folder and summarized, but failed to rename and download.</p>
+                </div>
+            </div>
+            <table class="metrics-table">
+                <tr><th>Metric</th><th>MultiOn</th><th>Claude</th></tr>
+                <tr><td>Completed</td><td>No</td><td>Yes</td></tr>
+                <tr><td>Speed</td><td>55s</td><td>120s</td></tr>
+                <tr><td>Accuracy</td><td>20%</td><td>80%</td></tr>
+            </table>
+        </div>
+
+        <div class="task" id="task5">
+            <h2>Task 5: Estimate Calorie Counts</h2>
+            <p class="task-meta">Prompt: Estimate the calorie count of the most popular menu item at Geneva Steakhouse in SF.</p>
+            <div class="videos">
+                <div class="video-box">
+                    <h4>MultiOn</h4>
+                    <iframe src="https://www.youtube.com/embed/HF1tkUwbQnk" allowfullscreen></iframe>
+                    <p>Used general photos, didn't search reviews, needed clarification.</p>
+                </div>
+                <div class="video-box">
+                    <h4>Claude</h4>
+                    <iframe src="https://www.youtube.com/embed/iWhMZIfXgQo" allowfullscreen></iframe>
+                    <p>Rate-limited on Maps; estimated ~1500 calories correctly but unclear grounding.</p>
+                </div>
+            </div>
+            <table class="metrics-table">
+                <tr><th>Metric</th><th>MultiOn</th><th>Claude</th></tr>
+                <tr><td>Completed</td><td>No</td><td>Yes</td></tr>
+                <tr><td>Speed</td><td>49s</td><td>360s</td></tr>
+                <tr><td>Accuracy</td><td>50%</td><td>90%</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('accuracyTimeGraph').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Itinerary', 'Fantasy Site', 'Book Flight', 'ML Paper', 'Calories'],
+                datasets: [
+                    {
+                        label: 'MultiOn Accuracy (%)',
+                        data: [20, 100, 0, 20, 50],
+                        backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                    },
+                    {
+                        label: 'Claude Accuracy (%)',
+                        data: [70, 90, 0, 80, 90],
+                        backgroundColor: 'rgba(239, 68, 68, 0.7)',
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { position: 'top' } },
+                scales: {
+                    y: { beginAtZero: true, max: 100, title: { display: true, text: 'Accuracy (%)' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

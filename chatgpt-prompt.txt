@@ -1,0 +1,403 @@
+Can you tell me about this guy zach? Is he legit, worth working with or investing in? heres his linkedin, what hes working on, and some writings and personal site
+
+heres his site does that change ur pov
+
+=== LINKEDIN PROFILE ===
+
+Zachary Goldman, #HIRING
+Founder @ Portal (SPC F25)
+Portal
+United States
+500+ connections
+
+About:
+Making every product state instantly tryable & explainable.
+makeportals.com
+Personal site: goldmanzachary.com
+
+Hiring: Founding Infra Engineer
+Portal (SPC F25) · San Francisco Bay Area (On-site) · 1 day ago
+
+=== LINKEDIN POSTS ===
+
+POST 1 (13h ago):
+We hosted our first Portal Builders Night at South Park Commons.
+Instead of slides, we turned the space into an art gallery.
+
+Around the room were QR codes. Each one opened a different Portal:
+– a pre-signed-in demo account
+– a Chrome extension running on your phone (no install)
+– local files zipped and shared live
+– an AI Agent giving a demo
+
+No accounts.
+No downloads.
+No sales calls.
+
+At the end of the night, instead of paying for Kahoot, I built a React quiz on localhost:3000, zipped it, uploaded it to Portal, and handed the link to the room.
+Everyone got their own isolated browser session.
+
+When they closed it, it reset.
+What still feels magical isn't the quiz.
+
+It's that a link can now boot a live, isolated runtime - even for something running locally - and safely hand it to 20 people at once.
+
+We also just published our docs & are hiring:
+https://lnkd.in/gEUvvzfM
+
+Thanks for those who came out, excited to host more!
+
+If you have a product that has friction to try at certain moments (be it a new feature test, user research, or for pre-sales):
+Don't send a video.
+Send a Portal.
+
+POST 2 (1w ago):
+We just let over 100 people try our product without signing up.
+Here's what happened.
+
+During our Product Hunt launch for Portal (SPC F25), we let people open a Portal into their own isolated temporary browser session in under 2 seconds - logged into a real analytics product or the actual Portal builder.
+
+On average, they spent ~3 minutes exploring. About a third tried both.
+But the stats weren't the interesting part.
+
+The behavior was.
+
+When people are told they can't break anything, they get curious.
+
+They click everything. Wander off the happy path. Try to close the page. Ask the AI what else they can do.
+
+That surfaced UX and session edge cases we never would've found internally - and teams reached out to use this for their own high friction moments.
+
+We're already seeing creative uses:
+- replacing first demo calls
+- teaching creators how a product works
+- sharing Chrome extensions without installs
+- deploying local files for 10 minutes with analytics
+
+If you could let someone temporarily into any browser state, what would you share?
+
+Grateful to our group partner Finn Meeks for the advice, and our early design partners for being incredible.
+
+We're growing the team - and hosting a small builder event at SPC next Monday.
+
+POST 3 (1w ago):
+Portal just launched Product Hunt today & my laptop is barely making it, as I woke up to #10 of the day and moving fast.
+
+Portal (now known as Portal-14 according to product hunt) lets you send a link to a real product experience - a live browser session opened at a specific state - so people can actually try software instead of watching a video or hopping on a call.
+
+This launch comes right after the South Park Commons Demo Faire, lots of late nights, and a quick filmed video (if enough people upvote, I'll get a real mic).
+
+If you're curious about getting a link you can send for:
+• onboarding
+• user research
+• sharing localhost / extensions
+• product demos
+• ephemeral agentic sandboxes
+• future co-browsing sessions to never screen share again
+
+Try it on Product Hunt.
+
+POST 4 (2w ago):
+The past few weeks before demo faire at South Park Commons have been a lot of fun, working with folks to build Portals - which is the fastest way to let people try your product.
+
+Folks have been setting up Portals to send instead of a first sales call, lead gen, as an artifact for user research or to guide onboarding with zero effort to try.
+
+Some folks thought it'd take weeks or require lots of coding to set up a cloud browser at their product's magic moment with an AI & were surprised when we'd build one in minutes.
+
+But why watch a video when you can try it yourself? makeportals.com/try
+
+POST 5 (4w ago):
+The future of AI interfaces to try products for the vast majority of people is not going to be MCP & it's not going to require you to code at all.
+
+That's the bet we're making at Portal.
+
+There definitely will be big companies redoing their products from scratch so AI power users can use them.
+
+But a stage earlier, when people are evaluating which product to use or which capability to delegate, we don't think you should have to start over just to let people try it.
+
+Instead, Portal lets you bring your product as is with the interface you've built, choose the exact state you want folks to be dropped into, and let people try it in a secure sandbox.
+
+That could be in a demo account, with local files, or with integrations that users might not trust implementing before they've even decided to buy.
+
+With a Figma-like editor, Portal lets you drag & drop what's off limits, and even add an AI trained on your documentation to answer any questions or give a product demo.
+
+You get a link you can send to let anyone try your product at that safe state with an AI guide, getting analytics on how they use it, lowering the barrier to try it down to nothing.
+
+This can help replace first demo calls entirely without scheduling, setup, onboarding, or help with user research.
+
+With AI & new frameworks like MCP coming for interfaces, we think websites are still the best way for people to try your product.
+
+We're hiring if you're interested in building!
+
+POST 6 (1mo ago):
+Last year on Twitter, a billionaire said he was hiring hardcore engineers and asked people to drop a project they'd built.
+
+The top reply?
+"I'll let my work speak for itself: localhost:8000/index.html"
+
+It's a common joke online.
+You can't actually send localhost, it only exists on your computer.
+
+But we kept asking: what if you could?
+What if sending localhost was as easy as sharing a Google Doc link?
+
+A few weeks back, 25 founders scanned a QR code and instantly opened ephemeral isolated Portals to my localhost project, on their phones, at the same time.
+
+Instead of seeing a screen shared demo, they could actually click around in Play Mode.
+They asked questions to an AI I'd given documentation to.
+They experienced the product.
+
+Building software is easier than ever.
+Sharing it is still stuck decades back.
+Portal is working to fix that.
+
+We let you capture & share any product state with temporary access, guardrails, and an AI that answers questions 24/7. Zero code.
+
+Founders & sales teams are already replacing videos/slides/demo calls with Portals for self-serve qualification, onboarding, and user research.
+
+Other folks are using Portals for interesting use cases like looking at a website together while face timing parents by sending a Portal link instead of screen sharing.
+
+And now, Portal lets you share localhost.
+
+Don't send a video - send a Portal.
+Try it: makeportals.com or DM me and I'll send you one.
+
+POST 7 (2mo ago):
+Today I'm sharing something I've never seen posted on LinkedIn before: a full AI-led demo built with zero code.
+
+Two weeks after launching Portal, we've been learning from brilliant folks across sales, SE, and dev-tools teams how they can help convert more & save rep time by setting up a Portal to start from any state.
+
+This lets them drop prospects into the exact product state they want - already logged in, configured, and loaded with data - and have AI run a demo.
+
+Here's what that looks like:
+An AI that can:
+> walk prospects through a real product
+> answer questions
+> click, scroll, navigate
+> guide objections / follow scripts
+> personalize the journey
+> and drive to a CTA
+…all in a sandboxed environment of your actual product.
+
+Portal is the fastest way to build an AI-led or new User-led demo; this AI-led demo took just minutes to build. User-led example coming soon.
+
+Zero code.
+
+You shouldn't need to re-build your product to be agentic.
+Bring your website & just make a Portal. Don't send a video - send a Portal.
+
+Reach out to be a partner & start building Portals.
+We're also hiring exceptional engineers who want to redefine how software gets experienced - starting with demos.
+
+POST 8 (2mo ago):
+Portal (SPC F25) just made history.
+
+2 days after Portal's launch, at a private SPC pre-demo day event for VC partners & founder fellows, I tried something I'd never seen anyone do before.
+
+Instead of ending our presentation with a website link or video…
+…I ended with a QR code to a live Portal.
+
+"Scan this and try a Chrome extension on your phone - instantly."
+No installs.
+No setup.
+No app switching.
+
+When 20+ founders scanned it, they instantly opened a real Chrome extension on their phones - no install, no friction.
+Watching a room full of founders try a Chrome extension in real time, on mobile, without downloading anything was surreal.
+
+Founder Fellows asked if they could use Portals for their own demo day.
+Another founder tried refreshing ~40 times to beat the view limit.
+Others came up after asking how they could integrate Portals into their onboarding.
+
+We're still early, but one thing is clear:
+People don't want to watch a demo anymore.
+They want to experience the product.
+
+POST 9 (2mo ago):
+If you're in sales, build demos, or work on developer tools, this is for you:
+
+We just raised a committed $1m from South Park Commons to build Portal (SPC F25): a first of its kind user-led AI demo sandbox - that lets prospects try your product instantly, with AI guiding them through the exact story your team wants.
+
+What are user-led demos?
+
+You can let prospects actually try your product in a safe, stateful sandbox - signed into a dummy account, with PII scrubbed, or with software pre-installed - and ask AI (trained on your docs) how to do anything as they open to your magic moment.
+
+Portal also of course supports AI-led demos, where the AI dynamically runs through a pre-set paths based on what users ask, answering questions & asking discovery questions back.
+
+Built for sales teams, with features you can't find elsewhere:
+> Phone-a-Friend: the AI can call a rep directly into the demo
+> Auto-updating demos (no more SE rebuilds)
+> No-code demo builder for web, local files, or apps
+> World-class analytics with first-party behavioral insights
+
+What this means for your team:
+> 10x faster demo prep
+> Prospects qualify themselves before the call
+> Portals revive ghosted deals
+> Reps close deals while they sleep
+> Reduced SE load by replacing repetitive walkthroughs & common FAQs
+
+& if you're a dev tools founder, this means you can drop people into states where an SDK is already installed, share localhost, and give hidden API key access. Founders also have been asking to send Portals of local builds for alpha testing/user research, for the state, agent, or analytics experience.
+
+Hey, I'm Zach - I left Microsoft AI's Copilot Analytics team 6 months ago & built Portal - sandbox links that let anyone experience a product instantly, with an AI that can guide or demo it. We've gotten incredible early feedback as part of the ODF community as well.
+
+Portal's mission is to make links for every product state on earth, making them reachable, and explainable. We think every product is incomplete unless it can explain how it works, by itself, to someone new, and South Park Commons agreed, committing $1m behind it in the founder fellowship.
+
+Last September, I was in a disability lab in Seattle, working on an extension I'd built to use voice to control computers, but installing the Chrome extension on the machines kept getting in the way of feedback, and it made me realize something simple:
+
+Trying software shouldn't require installing it.
+
+Building products is getting easier for billions of people, but trying them is still the same old videos or onboarding slowly. As products become agentic, at Portal we asked ourselves: how do you even try an agent? We're working to be that stateful experience layer of the web.
+
+=== LINKEDIN EXPERIENCE ===
+
+Founder - Portal (SPC F25)
+Aug 2025 - Present · 7 mos
+San Francisco Bay Area
+Building the fastest way for someone to try your product at its magic moment for sales, user research, and onboarding.
+
+Founder Fellow (F25) - South Park Commons
+Oct 2025 · 1 mo
+Funded as a portfolio company. On a mission to make every product instantly tryable & explainable - by turning statefulness into a shareable artifact.
+
+ODF26 Cohort - ODF
+Sep 2025 · 1 mo
+
+Product Manager - Microsoft AI
+Aug 2023 - May 2025 · 1 yr 10 mos
+Seattle, Washington
+
+Helped turn Bingchat into Copilot, made it give better answers & load faster, then left to build a startup.
+
+At Microsoft AI, I:
+- Led Edge/Windows Copilot model metrics for entire browser org: briefed execs daily, made Copilot load faster & give better answers with applied scientists/SWEs, ran Browser AI Agents comp research, gave lectures on system architecture of Copilot to 50+ architects/partner team members.
+- Built roadmap to save & ship Edge Bar's auto-start alongside 7x user retention increasing features with a wonderful team (ML notifications, Microsoft AI-wide A/B testing infrastructure, gaming features, audits).
+- Built interactive marketing landing pages & causal attribution tools for XXXM MAU visit-surfaces with a great PMM/engineering team.
+- Created cross-org v-team to promote user feedback, leading to 40+ user studies & 1st PM in 2 years approved to interview users directly by leadership & user research org.
+- Misc: Experimentation statistics champ: unblocked major Copilot launches & gave causal advice, personally pitched CEO on self-built SOTA computer use agent.
+
+Left to democratize Computer Use in accessibility/nonprofits then scale a startup.
+
+=== EDUCATION ===
+
+Rutgers University–New Brunswick
+Bachelor's degree, Computer Science, minor Quantitative Economics
+2019 - 2023
+Summa Cum Laude, Phi Beta Kappa (Junior inductee), Druskin, Scarlet, Excellence Scholarships, CS Faculty Student Project Award & 1st @ IEEE Hackathon 2021, Honors Government, Rutgers Film Productions.
+
+=== PORTAL DOCS (makeportals.com) ===
+
+Introduction:
+Think of a Portal like a link to a kiosk at a science fair showing off a specific app. Technically, it's a link to a locked-down browser in a cloud computer that's being shown on a page, with a secure runtime choosing what is clickable, and an optional AI.
+
+That experience can be:
+- Local files: Upload HTML, a React app, or static assets; Portal serves them in an isolated browser.
+- A Chrome extension: Upload a zip; recipients get the extension pre-installed in the session.
+- A particular session state: A saved snapshot (cookies, tabs, scroll) so the session opens already on the right page with the right data.
+- For enterprises: persistent sessions where visitors stay logged in.
+
+Play Mode:
+The visitor is in the driver's seat. They get a live browser in the state you chose (e.g. logged into a demo account, on a specific page). They can click around and explore. You set guardrails, allowed URLs, blocked elements, so they stay where you want. Optionally you add an AI in the sidebar to answer questions; the AI doesn't take over. Session is sandboxed and time-limited. You get analytics on what they did.
+
+Watch Mode:
+You script the steps (what the AI says, where it clicks); the visitor watches and can ask questions. The AI leads; the user doesn't click. Demos are one use case; many Portals are just shared state with no AI.
+
+Portal Spec:
+Portal is: a declarative, runnable snapshot of software state, delivered as a link. Think of it alongside OpenAPI, Dockerfile, Terraform, not alongside product tours or demo capture tools.
+
+Portal sits earlier in the funnel: try before you automate, evaluate before you delegate.
+
+Portal invariants:
+- Sessions are always isolated. One person per session; no shared state between visitors.
+- Sessions always reset after they end. When the session ends, the VM is destroyed.
+- No data persists between sessions.
+- Users cannot affect production. The session runs in an isolated cloud environment.
+- Guardrails are enforced continuously.
+
+Enterprise:
+- Persistent auth (OAuth, SSO, 2FA supported)
+- Hydration (declarative setup before prospect sees anything)
+- Reset (declarative teardown when session ends)
+- API blocking (block specific network calls)
+- Multi-demo accounts, multi-tab, multi-region, warm pools (sub-2s session start), concurrency control, session analytics
+- SOC 2 compliance in progress
+
+Use cases:
+DevRel workshops, Chrome extension sharing, founders sharing WIP, sales demos, onboarding, user research, shared Portals instead of FaceTime or screen share on calls.
+
+=== PERSONAL SITE (goldmanzachary.com) ===
+
+Hey, I'm Zach
+Building Portal (SPC F25). Previously doing a self-directed incubator.
+projects · writings
+
+Some anecdotes:
+
+Cold-messaging my way to SPC founder fellow:
+Was pitching TalkMode to Microsoft/OpenAI & thought getting the CPO of Anthropic to say it was a good idea would help. Saw an SPC hackathon with Anthropic - but got rejected. DM'd 15 SPC members, got in with 12 hours notice, booked a flight immediately. Convinced them to let me be the only solo hacker, won finalist with Yellow Pages from my nonprofit hackathon, got to go to event with CPO of Anthropic - asked him about computer use/accessibility which he said was a great idea - used in pitch later. Months later accepted as SPC member then founder fellow a week in.
+
+Referred to OpenAI & cold dm'ing the VP:
+Was referred to OpenAI then told I was too green by a hiring manager, so cold dmed my way to the VP who I sent a video saying I'd prove a new version of RLHF worked better - in 4 days I built a fullstack site to test it with A/B tests from scratch, sat in starbucks near Seattle University to test it with 30+ Gen Z including grad students and sent them a summary of findings.
+
+Microsoft AI political maneuvering to save a feature:
+Was told to let an Edge feature die. Instead, bundled the PR with a Copilot fix, convinced 5 marketing directors to launch a campaign for a feature before it even shipped—then used that momentum to force product leadership to greenlight it. Saved the feature and led to a 7x retention gain.
+
+Hosting the world's first agents for nonprofits hackathon:
+Organized the world's first AI Agents for Good Hackathon from scratch.
+
+Urgent care visits, agents, and startups:
+While dealing with the political maneuvering:
+- Led competitive analysis on AI Agents for Microsoft for 6 months (built a competitive analysis agent myself).
+- Caught & fixed two separate bugs that would have broken Windows Copilot for millions of users.
+- Acted essentially as principal applied scientist assigning work items (at some points reviewing PRs) to a team of 5 scientists representing the Edge org alongside GPMs from Windows & Bing in reporting & analyzing core Copilot metrics daily directly to leadership.
+- Balanced all of this while building TalkMode, living in a spider-infested Airbnb with bronchitis.
+
+Built Apple's Workout Buddy 2 years earlier:
+Back in 2023, my favorite app while learning how to run was WeavRun, an IOS app that changed the pace of the music playing when you sped up. One issue I had is that when I'd go running I'd often fall below the pace I wanted to go at but didn't get real-time feedback or motivation during the moment. I emailed the company with the feature idea, got a meeting with the Head of Product 4 days later, and came to that meeting with a full working prototype having learned Swift over the weekend. I got design feedback and an offer to be added as a developer to WeavRun so I could use it after they shut it down! I also had a buzzing mode instead of noise for folks with limited hearing. 2 years later Apple launched Workout Buddy - validating the pain point.
+
+=== SUBSTACK: "Hi to 6 in 3" ===
+
+Hi, thanks for reading! I quit Microsoft AI over 3 weeks ago to build what I wish existed - and test 6 new ways to democratize AI every two weeks with real users.
+
+Why I left:
+In mid-April, I was offered a major project in Microsoft AI. Instead of taking it, I chose to leave Microsoft after nearly 2 years to build full-time.
+
+I'd gone into product after reading The Sprint Book & loving the idea of quickly testing hypotheses. At Microsoft, I built & improved metrics for Copilot in Edge & Windows, saved then released a 7x retention consumer product, and worked across notifications, gaming, experimentation, ML-driven notifications & more, balancing 3+ projects at a given time & starting a cross-org team to encourage more user research, as the first PM in my org to interview users directly in 2 years.
+
+Over the past two years I've explored computer use agents, RLHF modalities, accessibility, and organized one the world's first AI Agents for Nonprofits hackathons, and I didn't see a team running fast cycles to test new ideas in neglected spaces or in the spirit of democratizing AI research, so I thought I'd "start" my own.
+
+What I'll be doing:
+I'll be running six sprints in three months, each one designed to test, fast, if the ideas can deliver real value — in speed, savings, or accuracy — for real users. The goal isn't just to explore: it's to earn trust, find traction, and converge toward something scalable or impactful as new tech's unlocked many more ways to help.
+
+I'm not betting on a single feature. I'm betting that velocity compounds.
+
+=== SUBSTACK: Sprint 1 - Yellow Pages ===
+
+TLDR: For my 1st sprint, I helped nonprofits keep their social service directories up to date. Currently they spend hours going through doctors' or pro bono legal websites to make sure they're directing clients to the right contact info, but it leads to typos/duplicates, preventing successful referrals (just over half in one nonprofit) and people getting the care they need. I built Yellow Pages, a website to have LLMs monitor and summarize website changes, de-duplicate their existing data, and verify new information via screenshots with a from-scratch built computer-use deep research agent 10x faster and 3x cheaper than OpenAI's since other deep research tools were too slow, unreliable, and expensive for contact details. Since my February Agents for Nonprofits hackathon, 2 nonprofits have been helped with the features and now a 3rd is using the actual site in May, saving hundreds of hours.
+
+Hypotheses:
+- For Deep Research, Screenshots are an under-rated feature that saves time verifying lack of hallucinations & is seen as valuable compared to strictly URL or text-based sourcing. Validated.
+- For Computer Use Agents, website monitoring is a killer use case. Validated.
+- Nonprofits would pay for a dashboard to de-duplicate, monitor changes of websites of social services. Invalidated: Not seen as high value enough to pay with limited resources.
+
+Learnings:
+- Isolating the real minimum value-prop
+- The web is dynamic: determining what information to put into the context window of an LLM, how many calls, and guaranteeing deterministic output
+- UI: How it solves a user's problem > tech matters way more
+- Decision-makers over operators: One nonprofit had an operator that loved it but leadership decided to go with a less feature-rich alternative - a lesson to go to decision makers first.
+
+=== SUBSTACK: Sprint 2 - Tryextended.com ===
+
+Lovable for Chrome Extensions. June 1st - June 14th - I built a dev tool that helps you build, debug, and share Chrome Extensions instantly because every modern agent is basically a Chrome Extension in disguise.
+
+Insight: Every single web agent nowadays is literally what we would've called a Chrome Extension acting on a webpage two years ago. Companies offering agentic browsers essentially are cherrypicking use cases where a specific workflow is done on a specific website that'd be better off solved by a one-off chrome extension & betting that their agents can build the same accuracy of tools on demand that already exist in extensions.
+
+Hypotheses:
+Developers struggle with building extensions & would pay $10/month to save on time & stress. A solution would be an overlay IDE that lets them easily send console logs, DOM elements, has a system prompt of how extensions worked, and hot reloaded, plugged into an agentic IDE.
+
+Learnings:
+- Most "workflow builders" aren't tools: they're homework. Users don't know what workflows they want automated.
+- If they did make money they would be so used to the issues & technical enough to speed through them by routine.
+- Sprint 3's carried me over into Sprint 6 (where I'm at now), since I got validation after validation for the next rounds of hypotheses.
+
+What do you think — is this someone you'd want to work with, invest in, or partner with?

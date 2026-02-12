@@ -86,6 +86,27 @@
             margin: 0 12px;
         }
 
+        /* Ask ChatGPT button */
+        .ask-chatgpt-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            background: #1a1a1a;
+            color: #fff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .ask-chatgpt-btn:hover {
+            background: #444;
+            transform: translateY(-1px);
+        }
+
         /* Anecdotes */
         .anecdotes-section {
             margin-bottom: 48px;
@@ -212,6 +233,8 @@
             <a href="projects.html">projects</a>
             <span>·</span>
             <a href="writings.html">writings</a>
+            <br>
+            <button type="button" class="ask-chatgpt-btn" onclick="askChatGPT()">Ask ChatGPT who Zach is ↗</button>
         </nav>
 
         <!-- Anecdotes -->
@@ -299,6 +322,21 @@
     </div>
 
     <script>
+        function askChatGPT() {
+            if (typeof gtag === 'function') {
+                gtag('event', 'ask_chatgpt_zach_click');
+            }
+            fetch('chatgpt-prompt.txt')
+                .then(function(r) { return r.text(); })
+                .then(function(msg) {
+                    var url = "https://chatgpt.com/?q=" + encodeURIComponent(msg);
+                    window.open(url, "_blank", "noopener,noreferrer");
+                })
+                .catch(function() {
+                    window.open("https://chatgpt.com", "_blank", "noopener,noreferrer");
+                });
+        }
+
         function toggleAnecdote(header) {
             const anecdote = header.parentElement;
             const wasOpen = anecdote.classList.contains('open');

@@ -107,10 +107,6 @@
             transform: translateY(-1px);
         }
 
-        .ask-chatgpt-btn {
-            transition: background 0.3s, transform 0.2s;
-        }
-
         /* Anecdotes */
         .anecdotes-section {
             margin-bottom: 48px;
@@ -331,19 +327,8 @@
             if (typeof gtag === 'function') {
                 gtag('event', 'ask_chatgpt_zach_click');
             }
-            var btn = document.querySelector('.ask-chatgpt-btn');
-            var original = btn.textContent;
-            navigator.clipboard.writeText(CHATGPT_PROMPT).then(function() {
-                btn.textContent = 'Copied! Opening ChatGPT — just paste ⌘V';
-                btn.style.background = '#2d8a4e';
-                setTimeout(function() {
-                    window.open("https://chatgpt.com", "_blank", "noopener,noreferrer");
-                }, 1500);
-                setTimeout(function() {
-                    btn.textContent = original;
-                    btn.style.background = '';
-                }, 4000);
-            });
+            var url = "https://chatgpt.com/?q=" + encodeURIComponent(CHATGPT_PROMPT);
+            window.open(url, "_blank", "noopener,noreferrer");
         }
 
         function toggleAnecdote(header) {

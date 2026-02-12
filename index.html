@@ -321,20 +321,14 @@
         </section>
     </div>
 
+    <script src="js/chatgpt-prompt.js"></script>
     <script>
         function askChatGPT() {
             if (typeof gtag === 'function') {
                 gtag('event', 'ask_chatgpt_zach_click');
             }
-            fetch('chatgpt-prompt.txt')
-                .then(function(r) { return r.text(); })
-                .then(function(msg) {
-                    var url = "https://chatgpt.com/?q=" + encodeURIComponent(msg);
-                    window.open(url, "_blank", "noopener,noreferrer");
-                })
-                .catch(function() {
-                    window.open("https://chatgpt.com", "_blank", "noopener,noreferrer");
-                });
+            var url = "https://chatgpt.com/?q=" + encodeURIComponent(CHATGPT_PROMPT);
+            window.open(url, "_blank", "noopener,noreferrer");
         }
 
         function toggleAnecdote(header) {

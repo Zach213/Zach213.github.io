@@ -107,6 +107,28 @@
             transform: translateY(-1px);
         }
 
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: #1a1a1a;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
         /* Anecdotes */
         .anecdotes-section {
             margin-bottom: 48px;
@@ -321,14 +343,20 @@
         </section>
     </div>
 
+    <div class="toast" id="toast">Prompt copied — paste it in ChatGPT!</div>
+
     <script src="js/chatgpt-prompt.js"></script>
     <script>
         function askChatGPT() {
             if (typeof gtag === 'function') {
                 gtag('event', 'ask_chatgpt_zach_click');
             }
-            var url = "https://chatgpt.com/?q=" + encodeURIComponent(CHATGPT_PROMPT);
-            window.open(url, "_blank", "noopener,noreferrer");
+            navigator.clipboard.writeText(CHATGPT_PROMPT).then(function() {
+                var toast = document.getElementById('toast');
+                toast.classList.add('show');
+                setTimeout(function() { toast.classList.remove('show'); }, 3000);
+            });
+            window.open("https://chatgpt.com", "_blank", "noopener,noreferrer");
         }
 
         function toggleAnecdote(header) {

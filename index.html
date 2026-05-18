@@ -86,27 +86,6 @@
             margin: 0 12px;
         }
 
-        /* Ask ChatGPT button */
-        .ask-chatgpt-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 18px;
-            background: #1a1a1a;
-            color: #fff;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.2s;
-        }
-
-        .ask-chatgpt-btn:hover {
-            background: #444;
-            transform: translateY(-1px);
-        }
-
         /* Anecdotes */
         .anecdotes-section {
             margin-bottom: 48px;
@@ -235,8 +214,6 @@
             <a href="writings.html">writings</a>
             <span>·</span>
             <a href="https://github.com/Zach213/" target="_blank">github</a>
-            <br>
-            <button type="button" class="ask-chatgpt-btn" onclick="askChatGPT()">Ask ChatGPT who Zach is ↗</button>
         </nav>
 
         <!-- Anecdotes -->
@@ -245,65 +222,65 @@
 
             <div class="anecdote">
                 <div class="anecdote-header" onclick="toggleAnecdote(this)">
-                    <span class="anecdote-title">Cold-messaging my way to SPC founder fellow</span>
+                    <span class="anecdote-title">Getting into SPC</span>
                     <span class="anecdote-toggle">+</span>
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        Was pitching <a href="projects/TalkMode.html">TalkMode</a> to Microsoft/OpenAI & thought getting the CPO of Anthropic to say it was a good idea would help. Saw an SPC hackathon with Anthropic - but got rejected. DM'd 15 SPC members, got in with 12 hours notice, booked a flight immediately. Convinced them to let me be the only solo hacker, won finalist with <a href="https://x.com/finn_meeks/status/1911878261509935534" target="_blank">Yellow Pages</a> from <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">my nonprofit hackathon</a>, got to go to event with CPO of Anthropic - asked him about computer use/accessibility which he said was a great idea - used in pitch later. Months later accepted as SPC member then founder fellow a week in.
+                        Was working on <a href="projects/TalkMode.html">TalkMode</a> and wanted feedback from the Anthropic team. Saw an SPC hackathon, got rejected, but DM'd my way in with 12 hours notice. Went solo, made finalist with <a href="https://x.com/finn_meeks/status/1911878261509935534" target="_blank">Yellow Pages</a> (from <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">a nonprofit hackathon</a>). Got to chat with Anthropic's CPO about computer use and accessibility. Later joined SPC as a founder fellow.
                     </div>
                 </div>
             </div>
 
             <div class="anecdote">
                 <div class="anecdote-header" onclick="toggleAnecdote(this)">
-                    <span class="anecdote-title">Referred to OpenAI & cold dm'ing the VP</span>
+                    <span class="anecdote-title">The OpenAI application</span>
                     <span class="anecdote-toggle">+</span>
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        Was referred to OpenAI then told I was too green by a hiring manager, so cold dmed my way to the VP who I sent a video saying I'd prove a new version of RLHF worked better - in 4 days I built a fullstack site to test it with A/B tests from scratch, sat in starbucks near Seattle University to test it with 30+ Gen Z including grad students and sent them a <a href="projects/TierListGPT.html">summary of findings</a>.
+                        Got referred to OpenAI, was told I was too green. Reached out to a VP and offered to prove out a new RLHF approach. Built a <a href="projects/TierListGPT.html">full A/B testing site</a> in 4 days and ran it with 30+ people at a Starbucks near Seattle University.
                     </div>
                 </div>
             </div>
 
             <div class="anecdote">
                 <div class="anecdote-header" onclick="toggleAnecdote(this)">
-                    <span class="anecdote-title">Microsoft AI political maneuvering to save a feature</span>
+                    <span class="anecdote-title">Saving a feature at Microsoft</span>
                     <span class="anecdote-toggle">+</span>
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        Was told to let an Edge feature die. Instead, bundled the PR with a Copilot fix, convinced 5 marketing directors to launch a campaign for a feature before it even shipped—then used that momentum to force product leadership to greenlight it. Saved the feature and led to a 7x retention gain.
+                        Was told to let an Edge feature die. Bundled the fix with a Copilot PR, got marketing support, and made the case to ship it. Ended up driving a 7x retention gain.
                     </div>
                 </div>
             </div>
 
             <div class="anecdote">
                 <div class="anecdote-header" onclick="toggleAnecdote(this)">
-                    <span class="anecdote-title">Hosting the world's first agents for nonprofits hackathon</span>
+                    <span class="anecdote-title">AI for Good hackathon</span>
                     <span class="anecdote-toggle">+</span>
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        Organized the <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">world's first AI Agents for Good Hackathon</a> from scratch.
+                        Organized an <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">AI Agents for Good Hackathon</a> focused on nonprofit use cases.
                     </div>
                 </div>
             </div>
 
             <div class="anecdote">
                 <div class="anecdote-header" onclick="toggleAnecdote(this)">
-                    <span class="anecdote-title">Urgent care visits, agents, and startups</span>
+                    <span class="anecdote-title">Doing a lot at once</span>
                     <span class="anecdote-toggle">+</span>
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        While dealing with the political maneuvering:
+                        During that stretch at Microsoft:
                         <ul>
-                            <li>Led competitive analysis on AI Agents for Microsoft for 6 months (built a competitive analysis agent myself).</li>
-                            <li>Caught & fixed two separate bugs that would have broken Windows Copilot for millions of users.</li>
-                            <li>Acted essentially as principal applied scientist assigning work items (at some points reviewing PRs) to a team of 5 scientists representing the Edge org alongside GPMs from Windows & Bing in reporting & analyzing core Copilot metrics daily directly to leadership.</li>
-                            <li>Balanced all of this while building TalkMode, living in a spider-infested Airbnb with bronchitis.</li>
+                            <li>Ran competitive analysis on AI agents for 6 months.</li>
+                            <li>Caught two bugs that would have broken Copilot for a lot of users.</li>
+                            <li>Coordinated daily Copilot metrics reporting across Edge, Windows, and Bing teams.</li>
+                            <li>Built TalkMode on the side from a not-great Airbnb while sick.</li>
                         </ul>
                     </div>
                 </div>
@@ -311,28 +288,19 @@
 
             <div class="anecdote">
                 <div class="anecdote-header" onclick="toggleAnecdote(this)">
-                    <span class="anecdote-title">Built Apple's Workout Buddy 2 years earlier</span>
+                    <span class="anecdote-title">PocketCoach</span>
                     <span class="anecdote-toggle">+</span>
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        Back in 2023, my favorite app while learning how to run was WeavRun, an IOS app that changed the pace of the music playing when you sped up. One issue I had is that when I'd go running I'd often fall below the pace I wanted to go at but didn't get real-time feedback or motivation during the moment. I <a href="projects/pocketcoach.html">emailed the company with the feature idea</a>, got a meeting with the Head of Product 4 days later, and came to that meeting with a full working prototype having learned Swift over the weekend. I got design feedback and an offer to be added as a developer to WeavRun so I could use it after they shut it down! I also had a buzzing mode instead of noise for folks with limited hearing. 2 years later Apple launched Workout Buddy - validating the pain point.
+                        In 2023 I was using WeavRun (a running app that syncs music to pace) and wanted real-time coaching when I slowed down. <a href="projects/pocketcoach.html">Emailed them the idea</a>, got a meeting with the Head of Product, and showed up with a working Swift prototype I'd built over the weekend. They offered to add me as a developer. Added a vibration mode for runners with limited hearing. Two years later Apple shipped something similar with Workout Buddy.
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <script src="js/chatgpt-prompt.js"></script>
     <script>
-        function askChatGPT() {
-            if (typeof gtag === 'function') {
-                gtag('event', 'ask_chatgpt_zach_click');
-            }
-            var url = "https://chatgpt.com/?q=" + encodeURIComponent(CHATGPT_PROMPT);
-            window.open(url, "_blank", "noopener,noreferrer");
-        }
-
         function toggleAnecdote(header) {
             const anecdote = header.parentElement;
             const wasOpen = anecdote.classList.contains('open');

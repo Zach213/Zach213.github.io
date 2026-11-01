@@ -228,7 +228,7 @@
                 </div>
                 <div class="anecdote-content">
                     <div class="anecdote-content-inner">
-                        Built a computer use agent using GPT-4V after reading the Set-of-Mark prompting paper; have some nerve damage in my arms so thought computer use would be a game changer for folks with limited mobility. Pitched the CEO of Microsoft AI on <a href="projects/TalkMode.html">TalkMode</a>, got IP and was visiting disability labs on the weekends for months, and wanted to integrate it back into a frontier org. Saw Anthropic's CPO speaking at an event South Park Commons was hosting where only hackathon attendees were invited. DM'd 15 fellows for a coffee chat, got invited to the hackathon, flew with 12 hours notice, became a finalist with <a href="https://x.com/finn_meeks/status/1911878261509935534" target="_blank">Yellow Pages</a> (from <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">a nonprofit hackathon</a>), asked the CPO about computer use for accessibility, and mentioned he liked the idea when pitching Microsoft. Had senior leader support for the idea, but it was eventually blocked. Quit & joined SPC as a member a few months later - then funded a week in.
+                        Built a computer use agent using GPT-4V after reading the Set-of-Mark prompting paper; have some nerve damage in my arms so thought computer use would be a game changer for folks with limited mobility. Pitched the CEO of Microsoft AI on <a href="projects/TalkMode.html">TalkMode</a>, got IP and was visiting disability labs on the weekends for months, and wanted to integrate it back into Copilot. Saw Anthropic's CPO speaking at an event South Park Commons was hosting where only hackathon attendees were invited. DM'd 15 fellows, got invited to the hackathon, flew with 12 hours notice, was the only solo hacker, became a finalist with <a href="https://x.com/finn_meeks/status/1911878261509935534" target="_blank">Yellow Pages</a> (from <a href="https://www.linkedin.com/posts/activity-7297814573556895747-nwYv" target="_blank">a nonprofit hackathon</a>), and asked the CPO about computer use for accessibility. Copilot and LinkedIn leaders backed it, but a senior leader blocked it. Quit & joined SPC as a member a few months later - then funded a week in.
                     </div>
                 </div>
             </div>
@@ -297,18 +297,7 @@
 
     <script>
         function toggleAnecdote(header) {
-            const anecdote = header.parentElement;
-            const wasOpen = anecdote.classList.contains('open');
-            
-            // Close all anecdotes
-            document.querySelectorAll('.anecdote').forEach(a => {
-                a.classList.remove('open');
-            });
-            
-            // If it wasn't open, open it
-            if (!wasOpen) {
-                anecdote.classList.add('open');
-            }
+            header.parentElement.classList.toggle('open');
         }
     </script>
 </body>

@@ -38,6 +38,27 @@
             margin-bottom: 32px;
             font-size: 1rem;
         }
+        .label {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .setup {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 32px;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .setup p + p { margin-top: 8px; }
+        .setup strong { color: #111; font-weight: 600; }
         .section {
             margin-bottom: 48px;
         }
@@ -151,13 +172,19 @@
     <a href="../index.html" class="back-link">← home</a>
 
     <div class="container">
+        <p class="label">Early notes · December 2024</p>
         <h1>MultiOn vs Claude Computer Use</h1>
-        <p class="tagline">Comparison of real-world performance across 5 tasks (small n, not rigorous)</p>
+        <p class="tagline">Side-by-side runs on 5 real-world tasks</p>
+
+        <div class="setup">
+            <p><strong>Models:</strong> Claude 3.5 Sonnet (Oct 2024) with the computer use beta, vs. MultiOn's web agent as of December 2024 (MultiOn doesn't publish its underlying model).</p>
+            <p><strong>Method:</strong> One run per agent per task, recorded December 2024. Accuracy is a hand-graded estimate, not a rubric score. With n=5 and no repeats, treat these as early observations, not an eval.</p>
+        </div>
 
         <div class="section">
             <h2 class="section-title">Summary</h2>
             <div class="chart-container">
-                <p class="chart-note">MultiOn generally performs tasks faster, but Claude tends to be more accurate.</p>
+                <p class="chart-note">In these runs, MultiOn was usually faster and Claude was usually more accurate.</p>
                 <canvas id="accuracyTimeGraph" height="200"></canvas>
             </div>
         </div>

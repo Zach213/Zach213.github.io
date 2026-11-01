@@ -45,9 +45,20 @@
             text-decoration: none;
             border-radius: 6px;
             font-size: 0.9rem;
-            margin-bottom: 40px;
         }
         .cta:hover { background: #333; }
+        .ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .cta-secondary {
+            background: #fff;
+            color: #111;
+            border: 1px solid #ddd;
+        }
+        .cta-secondary:hover { background: #f5f5f5; }
         .video-container {
             margin-bottom: 40px;
             border-radius: 8px;
@@ -104,8 +115,11 @@
 
     <div class="container">
         <h1>TalkMode</h1>
-        <p class="tagline">Voice control for everyday web browsing</p>
-        <a href="https://chromewebstore.google.com/detail/talkmode/oiegdbpjodaknhfjopkdiidfmaeakeka" target="_blank" class="cta">Try on Chrome Web Store</a>
+        <p class="tagline">Voice control for everyday web browsing · March 2024 – May 2025</p>
+        <div class="ctas">
+            <a href="https://chromewebstore.google.com/detail/talkmode/oiegdbpjodaknhfjopkdiidfmaeakeka" target="_blank" class="cta">Try on Chrome Web Store</a>
+            <a href="https://www.youtube.com/watch?v=pOZkRdByNKA" target="_blank" class="cta cta-secondary">Watch demo</a>
+        </div>
 
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/pOZkRdByNKA" allowfullscreen></iframe>
@@ -122,6 +136,16 @@
         </div>
 
         <div class="section">
+            <h2 class="section-title">Approach</h2>
+            <p class="description">
+                In 2023 I read Microsoft Research's Set-of-Mark prompting paper, which overlays numbered marks on regions
+                of a screenshot so GPT-4V can point to exactly which element it means. Starting in March 2024, I used that
+                approach with GPT-4V to build a voice computer-use agent: you say what you want, and the model picks the
+                marked element to click or type into.
+            </p>
+        </div>
+
+        <div class="section">
             <h2 class="section-title">Details</h2>
             <div class="details-grid">
                 <div class="detail-box">
@@ -134,7 +158,7 @@
                 </div>
                 <div class="detail-box">
                     <h3>Impact</h3>
-                    <p>Featured by Google Chrome Web Store. 10k+ Reddit views. Interest from university assistive technology departments.</p>
+                    <p>Featured by Google Chrome Web Store. 10k+ Reddit views. 5 university assistive-tech directors offered to expand it.</p>
                 </div>
                 <div class="detail-box">
                     <h3>Learnings</h3>

@@ -104,6 +104,12 @@
             margin-bottom: 4px;
         }
 
+        .project-when {
+            font-weight: 400;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
         .project-desc {
             font-size: 0.9rem;
             color: #666;
@@ -116,14 +122,48 @@
             margin-top: 6px;
         }
 
-        .new-tag {
-            font-size: 0.7rem;
-            color: #fff;
-            background: #111;
-            padding: 2px 6px;
-            border-radius: 3px;
-            margin-left: 8px;
-            vertical-align: middle;
+        .experiments .project-link {
+            padding: 10px 0;
+        }
+
+        .experiments .project-link:hover {
+            padding: 10px 12px;
+        }
+
+        .experiments .project-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .experiments .project-desc {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .experiments .section-title {
+            margin-bottom: 12px;
+        }
+
+        .links {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        .links a {
+            color: #111;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .links a:hover {
+            border-color: #111;
+        }
+
+        .links span {
+            color: #ccc;
+            margin: 0 12px;
         }
 
         @media (max-width: 600px) {
@@ -138,6 +178,10 @@
             .project-link:hover {
                 margin: 0 -8px;
                 padding: 16px 8px;
+            }
+
+            .experiments .project-link:hover {
+                padding: 10px 8px;
             }
         }
     </style>
@@ -155,19 +199,19 @@
             <ul class="project-list">
                 <li class="project-item">
                     <a href="projects/extended.html" class="project-link">
-                        <div class="project-name">Extended <span class="new-tag">new</span></div>
+                        <div class="project-name">Extended <span class="project-when">· Aug 2025</span></div>
                         <div class="project-desc">Talk to any website and reshape how it works. Browser overlay that builds Chrome extensions through conversation.</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/yellowpages.html" class="project-link">
-                        <div class="project-name">Yellow Pages <span class="new-tag">new</span></div>
+                        <div class="project-name">Yellow Pages <span class="project-when">· Feb–Jun 2025</span></div>
                         <div class="project-desc">Deep research agent for nonprofits. 10x faster than OpenAI's at finding contact info with screenshot proof.</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/TalkMode.html" class="project-link">
-                        <div class="project-name">TalkMode <span class="new-tag">new</span></div>
+                        <div class="project-name">TalkMode <span class="project-when">· Mar 2024 – May 2025</span></div>
                         <div class="project-desc">Computer use agent helping people with disabilities navigate the web. Featured by Google Chrome Web Store.</div>
                     </a>
                 </li>
@@ -179,26 +223,20 @@
             <ul class="project-list">
                 <li class="project-item">
                     <a href="projects/agentComparison.html" class="project-link">
-                        <div class="project-name">MultiOn vs Claude Computer Use</div>
-                        <div class="project-desc">Early notes (Dec 2024): Claude 3.5 Sonnet computer use vs MultiOn on 5 tasks, accuracy and speed.</div>
+                        <div class="project-name">MultiOn vs Claude Computer Use <span class="project-when">· Dec 2024</span></div>
+                        <div class="project-desc">Early notes: Claude 3.5 Sonnet computer use vs MultiOn on 5 tasks, accuracy and speed.</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/TierListGPT.html" class="project-link">
-                        <div class="project-name">TierListGPT</div>
+                        <div class="project-name">TierListGPT <span class="project-when">· Mar 2025</span></div>
                         <div class="project-desc">Ranking-based LLM interaction for structured decision-making.</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/NutritionAgent.html" class="project-link">
-                        <div class="project-name">Nutrition Agent</div>
+                        <div class="project-name">Nutrition Agent <span class="project-when">· Jan 2025</span></div>
                         <div class="project-desc">Chrome extension that estimates calories from menu items using Google Review photos.</div>
-                    </a>
-                </li>
-                <li class="project-item">
-                    <a href="projects/CAPTCHAAudio.html" class="project-link">
-                        <div class="project-name">Audio CAPTCHA Experiment</div>
-                        <div class="project-desc">Testing if GPT-4o can solve audio captchas with transcription tools.</div>
                     </a>
                 </li>
             </ul>
@@ -209,41 +247,29 @@
             <ul class="project-list">
                 <li class="project-item">
                     <a href="projects/pocketcoach.html" class="project-link">
-                        <div class="project-name">PocketCoach</div>
+                        <div class="project-name">PocketCoach <span class="project-when">· 2023</span></div>
                         <div class="project-desc">iOS app that plays motivational messages when runners fall below their pace.</div>
-                        <div class="project-tag">Voted most creative at Rutgers CS showcase</div>
+                        <div class="project-tag">Rutgers CS faculty award for most creative student project</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/wyr.html" class="project-link">
-                        <div class="project-name">Would You Recommend</div>
+                        <div class="project-name">Would You Recommend <span class="project-when">· Fall 2021</span></div>
                         <div class="project-desc">Better professor ratings for Rutgers students.</div>
                         <div class="project-tag">700 users in 3 days</div>
                     </a>
                 </li>
                 <li class="project-item">
-                    <a href="projects/newTabBackgroundImageGenerator.html" class="project-link">
-                        <div class="project-name">AI Image New Tab</div>
-                        <div class="project-desc">Chrome extension that generates a new AI image for your new tab page every day.</div>
-                    </a>
-                </li>
-                <li class="project-item">
                     <a href="projects/rankedchoice.html" class="project-link">
-                        <div class="project-name">Ranked Choice Voting Bot</div>
+                        <div class="project-name">Ranked Choice Voting Bot <span class="project-when">· 2021</span></div>
                         <div class="project-desc">Discord bot for ranked-style polling.</div>
                         <div class="project-tag">1st place at Rutgers Hackathon</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/backpack.html" class="project-link">
-                        <div class="project-name">Backpack Optimizer</div>
+                        <div class="project-name">Backpack Optimizer <span class="project-when">· 2021</span></div>
                         <div class="project-desc">Chrome extension that optimizes schedules using the knapsack algorithm.</div>
-                    </a>
-                </li>
-                <li class="project-item">
-                    <a href="projects/PressingEnter.html" class="project-link">
-                        <div class="project-name">Chrome History Scroller</div>
-                        <div class="project-desc">Script that scrolls through your Chrome history to find a specific date.</div>
                     </a>
                 </li>
             </ul>
@@ -254,18 +280,48 @@
             <ul class="project-list">
                 <li class="project-item">
                     <a href="projects/rustewed.html" class="project-link">
-                        <div class="project-name">RU Stewed</div>
+                        <div class="project-name">RU Stewed <span class="project-when">· 2021</span></div>
                         <div class="project-desc">Website for Rutgers students to share recipes using dining hall ingredients.</div>
                     </a>
                 </li>
                 <li class="project-item">
                     <a href="projects/thelx.html" class="project-link">
-                        <div class="project-name">The LX</div>
+                        <div class="project-name">The LX <span class="project-when">· 2020</span></div>
                         <div class="project-desc">Forum for upperclassmen to give advice to underclassmen at Rutgers.</div>
                     </a>
                 </li>
             </ul>
         </div>
+
+        <div class="section experiments">
+            <h2 class="section-title">Smaller experiments</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="projects/CAPTCHAAudio.html" class="project-link">
+                        <div class="project-name">Audio CAPTCHA <span class="project-when">· 2024</span></div>
+                        <div class="project-desc">Can GPT-4o solve audio captchas with transcription tools?</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/newTabBackgroundImageGenerator.html" class="project-link">
+                        <div class="project-name">AI Image New Tab <span class="project-when">· 2023</span></div>
+                        <div class="project-desc">Daily AI background for your new tab page.</div>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="projects/PressingEnter.html" class="project-link">
+                        <div class="project-name">Chrome History Scroller <span class="project-when">· 2022</span></div>
+                        <div class="project-desc">Script to scroll Chrome history to a specific date.</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="links">
+            <a href="https://www.linkedin.com/in/zachsgoldman" target="_blank">linkedin</a>
+            <span>·</span>
+            <a href="mailto:zacharygoldman@gmail.com">email</a>
+        </nav>
     </div>
 </body>
 </html>

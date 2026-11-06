@@ -91,13 +91,69 @@
             margin-bottom: 48px;
         }
 
-        .anecdotes-section h2 {
+        .anecdotes-section h2,
+        .timeline-section h2 {
             font-size: 0.85rem;
             font-weight: 500;
             color: #999;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 20px;
+        }
+
+        .timeline-section {
+            margin-bottom: 48px;
+        }
+
+        .timeline-list {
+            list-style: none;
+            border-top: 1px solid #eee;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            padding: 14px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+            line-height: 1.65;
+        }
+
+        .timeline-date {
+            flex: 0 0 6.5rem;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        .timeline-body {
+            color: #555;
+        }
+
+        .timeline-body a {
+            color: #1a1a1a;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .timeline-body a:hover {
+            color: #666;
+        }
+
+        .timeline-note {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 16px;
+            line-height: 1.6;
+        }
+
+        .timeline-note a {
+            color: #1a1a1a;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .timeline-note a:hover {
+            color: #666;
         }
 
         .anecdote {
@@ -195,6 +251,15 @@
             .anecdote-content-inner {
                 font-size: 0.85rem;
             }
+
+            .timeline-item {
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .timeline-date {
+                flex: none;
+            }
         }
     </style>
 </head>
@@ -220,6 +285,25 @@
             <span>·</span>
             <a href="mailto:zacharygoldman@gmail.com">email</a>
         </nav>
+
+        <section class="timeline-section">
+            <h2>Computer use timeline</h2>
+            <ul class="timeline-list">
+                <li class="timeline-item">
+                    <span class="timeline-date">2023</span>
+                    <span class="timeline-body">Read Microsoft Research's Set-of-Mark prompting paper; started prototyping GPT-4V + overlay grounding to click the browser by voice.</span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">Mar 2024</span>
+                    <span class="timeline-body">Launched <a href="projects/TalkMode.html">TalkMode</a> on the Chrome Web Store — a voice computer-use agent for people with limited mobility (validated at a Seattle disability lab).</span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">Oct 2024</span>
+                    <span class="timeline-body">Anthropic shipped computer use in public API beta. I'd been shipping TalkMode for ~7 months by then.</span>
+                </li>
+            </ul>
+            <p class="timeline-note">Public beta date is from Anthropic's Oct 22, 2024 <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank" rel="noopener">announcement</a>. I'm comparing to that launch, not to when they may have started internal R&amp;D.</p>
+        </section>
 
         <!-- Anecdotes -->
         <section class="anecdotes-section">
